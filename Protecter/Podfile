@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Protecter' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Firebase', '6.25.0'
+  pod 'Firebase/Auth'
+  pod 'FirebaseDatabase', '6.2.1'
+  pod 'EasyTipView', '~> 2.0.4'
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'IQKeyboardManager', '~> 6.5'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'SRScratchView'
+  pod 'ReachabilitySwift'
+  pod 'SVProgressHUD'
+  pod 'XLPagerTabStrip', '~> 9.0'
+  pod 'ESTabBarController-swift'
+  pod 'iOSDropDown'
+  
+  pod 'MaterialComponents/TextControls+FilledTextAreas'
+  pod 'MaterialComponents/TextControls+FilledTextFields'
+  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+  pod 'MaterialComponents/TextControls+OutlinedTextFields'
+  pod 'MaterialComponents/Buttons'
+  
+  pod 'GoogleMaps', '4.1.0'
+  pod 'GooglePlaces', '4.1.0'
+  
+  # Pods for Protecter
+
+end

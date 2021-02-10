@@ -1,0 +1,12 @@
+{
+  "isOk": true,
+  "messageCode": null,
+  "messageText": null,
+  "messageError": null,
+  "data": {
+    "userID": 12,
+    "userName": "902810384",
+    "tokend": null,
+    "roleUser": 4
+  }
+}

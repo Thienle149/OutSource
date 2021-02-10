@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertProblemVC" customModule="Protecter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2w-PG-ZV9">
+                    <rect key="frame" x="20" y="333" width="374" height="240"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-ok-96" translatesAutoresizingMaskIntoConstraints="NO" id="F0Z-11-MQu">
+                            <rect key="frame" x="139" y="20" width="96" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="96" id="EXQ-3B-F9w"/>
+                                <constraint firstAttribute="height" constant="96" id="yz0-8x-KYm"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwG-9I-hYQ">
+                            <rect key="frame" x="0.0" y="190" width="374" height="50"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="B7B-j5-dfF"/>
+                            </constraints>
+                            <state key="normal" title="Xem chi tiết">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionDetail:" destination="-1" eventType="touchUpInside" id="D1L-av-53N"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sự cố đã được gửi đến quản lý" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-Ri-1qq">
+                            <rect key="frame" x="87.5" y="132" width="199.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="và đội của bạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-pJ-p9q">
+                            <rect key="frame" x="141" y="151.5" width="92.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hRd-Ri-1qq" firstAttribute="top" secondItem="F0Z-11-MQu" secondAttribute="bottom" constant="16" id="9cG-nK-JGn"/>
+                        <constraint firstAttribute="bottom" secondItem="JwG-9I-hYQ" secondAttribute="bottom" id="Dkh-QD-yTa"/>
+                        <constraint firstItem="YL8-pJ-p9q" firstAttribute="top" secondItem="hRd-Ri-1qq" secondAttribute="bottom" constant="3" id="GQO-9X-BQE"/>
+                        <constraint firstAttribute="height" constant="240" id="Hg3-EU-d9X"/>
+                        <constraint firstItem="JwG-9I-hYQ" firstAttribute="leading" secondItem="P2w-PG-ZV9" secondAttribute="leading" id="J9n-tP-nF0"/>
+                        <constraint firstItem="hRd-Ri-1qq" firstAttribute="centerX" secondItem="F0Z-11-MQu" secondAttribute="centerX" id="Pam-S2-TQi"/>
+                        <constraint firstAttribute="trailing" secondItem="JwG-9I-hYQ" secondAttribute="trailing" id="ZgD-cN-Nut"/>
+                        <constraint firstItem="F0Z-11-MQu" firstAttribute="centerX" secondItem="P2w-PG-ZV9" secondAttribute="centerX" id="wBV-ga-yuj"/>
+                        <constraint firstItem="YL8-pJ-p9q" firstAttribute="centerX" secondItem="hRd-Ri-1qq" secondAttribute="centerX" id="z3I-yi-rSm"/>
+                        <constraint firstItem="F0Z-11-MQu" firstAttribute="top" secondItem="P2w-PG-ZV9" secondAttribute="top" constant="20" id="zfp-I1-qFb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.2731797272" green="0.2731797272" blue="0.2731797272" alpha="0.84934182359999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P2w-PG-ZV9" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1Ce-fT-kqp"/>
+                <constraint firstItem="P2w-PG-ZV9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="d4e-go-fl6"/>
+                <constraint firstItem="P2w-PG-ZV9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gPE-36-K8E"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-ok-96" width="96" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+{
+  "isOk": true,
+  "messageCode": null,
+  "messageText": null,
+  "messageError": null,
+  "data": {
+    "longitude": 106.60913298851986,
+    "latitude": 10.892791969607861,
+    "radius": 50
+  }
+}
