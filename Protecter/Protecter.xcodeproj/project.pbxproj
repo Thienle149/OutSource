@@ -110,6 +110,9 @@
 		4586C33D25D37F230040528A /* TabHistoryStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4586C33B25D37F230040528A /* TabHistoryStateVC.xib */; };
 		4586C34725D383280040528A /* BaseButtonBarPagerTabStripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C34625D383280040528A /* BaseButtonBarPagerTabStripVC.swift */; };
 		4586C34D25D39F430040528A /* leadProtecter.json in Resources */ = {isa = PBXBuildFile; fileRef = 4586C34C25D39F430040528A /* leadProtecter.json */; };
+		4586C37525D3B0DF0040528A /* StateProtectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C37425D3B0DF0040528A /* StateProtectVC.swift */; };
+		4586C37925D3B1720040528A /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C37725D3B1720040528A /* StateCell.swift */; };
+		4586C37A25D3B1720040528A /* StateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4586C37825D3B1720040528A /* StateCell.xib */; };
 		45A3C63C25C6D13900BF5B9E /* ProtecterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */; };
 		45A3C63E25C6D18500BF5B9E /* ShiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */; };
 		45A3C64125C6D95900BF5B9E /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C64025C6D95900BF5B9E /* TeamVC.swift */; };
@@ -234,6 +237,9 @@
 		4586C33B25D37F230040528A /* TabHistoryStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHistoryStateVC.xib; sourceTree = "<group>"; };
 		4586C34625D383280040528A /* BaseButtonBarPagerTabStripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonBarPagerTabStripVC.swift; sourceTree = "<group>"; };
 		4586C34C25D39F430040528A /* leadProtecter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = leadProtecter.json; sourceTree = "<group>"; };
+		4586C37425D3B0DF0040528A /* StateProtectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProtectVC.swift; sourceTree = "<group>"; };
+		4586C37725D3B1720040528A /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		4586C37825D3B1720040528A /* StateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateCell.xib; sourceTree = "<group>"; };
 		45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtecterModel.swift; sourceTree = "<group>"; };
 		45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftModel.swift; sourceTree = "<group>"; };
 		45A3C64025C6D95900BF5B9E /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
@@ -299,7 +305,6 @@
 			children = (
 				45A3C63F25C6D94200BF5B9E /* Modules */,
 				453B647725BC42C8004B5E12 /* HomeVC.swift */,
-				453B647425BC428A004B5E12 /* MenuVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 				4556AB4D25BC8E1B00716334 /* Home */,
 				4556AB5425BC92D400716334 /* Others */,
 				453B647125BC2D81004B5E12 /* MainTabBarVC.swift */,
+				453B647425BC428A004B5E12 /* MenuVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				4586C33625D37EA90040528A /* Tab24HourStateVC.xib */,
 				4586C33A25D37F230040528A /* TabHistoryStateVC.swift */,
 				4586C33B25D37F230040528A /* TabHistoryStateVC.xib */,
+				4586C37425D3B0DF0040528A /* StateProtectVC.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -657,6 +664,8 @@
 				4520135925D15FE200B4457B /* AreaProtectCell.xib */,
 				454212A725D26F6C00387B30 /* MediaCell.swift */,
 				454212A825D26F6C00387B30 /* MediaCell.xib */,
+				4586C37725D3B1720040528A /* StateCell.swift */,
+				4586C37825D3B1720040528A /* StateCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -762,6 +771,7 @@
 				4567B85E25BB0D2100CE1901 /* Roboto-MediumItalic.ttf in Resources */,
 				4569E98F25C6E0A500B83895 /* protecter.jpeg in Resources */,
 				4567B86725BB0D2100CE1901 /* Roboto-Black.ttf in Resources */,
+				4586C37A25D3B1720040528A /* StateCell.xib in Resources */,
 				45E0BD3D25CC44EE005AF55A /* LaunchScreen.storyboard in Resources */,
 				453FDCBE25CC392B00EFB300 /* location.json in Resources */,
 				4567B88025BB0E6D00CE1901 /* Rosario-BoldItalic.ttf in Resources */,
@@ -858,6 +868,7 @@
 				456C051C25B9DD600025C9A6 /* Utils.swift in Sources */,
 				456C04F325B9DAF90025C9A6 /* BaseVC.swift in Sources */,
 				45E0BCC625CC3E76005AF55A /* AppDelegate.swift in Sources */,
+				4586C37925D3B1720040528A /* StateCell.swift in Sources */,
 				456C04B425B9D5850025C9A6 /* ScrollViewExtension.swift in Sources */,
 				4567B88F25BB234F00CE1901 /* Storyboard+ext.swift in Sources */,
 				45E0BD6625CC508C005AF55A /* LocationModel.swift in Sources */,
@@ -879,6 +890,7 @@
 				4520135A25D15FE200B4457B /* AreaProtectCell.swift in Sources */,
 				4556AB5625BC932400716334 /* NotifyVC.swift in Sources */,
 				4520134525D13A6500B4457B /* ReportProblemCell.swift in Sources */,
+				4586C37525D3B0DF0040528A /* StateProtectVC.swift in Sources */,
 				456C04D825B9D64D0025C9A6 /* OTPFieldView.swift in Sources */,
 				45A3C63C25C6D13900BF5B9E /* ProtecterModel.swift in Sources */,
 				456C04D925B9D64D0025C9A6 /* OTPTextField.swift in Sources */,

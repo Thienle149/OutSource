@@ -34,7 +34,8 @@ class Constants: NSObject {
                                          ModuleModel(title: "Quản lý nhóm", image: #imageLiteral(resourceName: "icons8-attendance-80"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Lịch sử hoạt động", image: #imageLiteral(resourceName: "icons8-copybook-64"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Danh sách sự cố", image: #imageLiteral(resourceName: "icons8-high-risk-80"), vc: Utils.storyboary(screen: .problem, asClass: ProblemVC.self)),
-                                         ModuleModel(title: "Hiện trạng", image: #imageLiteral(resourceName: "icons8-medium-priority-96"), vc: Utils.storyboary(screen: .state, asClass: StateVC.self))
+                                         ModuleModel(title: "Hiện trạng", image: #imageLiteral(resourceName: "icons8-medium-priority-96"), vc: Utils.storyboary(screen: .state, asClass: StateVC.self)),
+                                                     ModuleModel(title: "Hiện trạng", image: #imageLiteral(resourceName: "icons8-medium-priority-96"), vc: Utils.storyboary(screen: .stateProtect, asClass: StateProtectVC.self))
     ]
     
     static let categoriesReportProblem: [CategoryProblemModel] = [CategoryProblemModel(title: "Cháy nổ", image: #imageLiteral(resourceName: "icons8-fire-96")),

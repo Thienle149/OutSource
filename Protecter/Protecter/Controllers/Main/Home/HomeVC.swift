@@ -17,6 +17,7 @@ class HomeVC: BaseVC {
     
     @IBOutlet weak var lblSheet: UILabel!
     @IBOutlet weak var imvSheet: UIImageView!
+    @IBOutlet weak var lblWelcome: UILabel!
     
     //Logic
     private let viewModel = HomeVM()
@@ -39,6 +40,8 @@ class HomeVC: BaseVC {
         
         self.user = Constants.global.user
         self.modules = Constants.global.user.role.getModule()
+        
+        self.lblWelcome.text = "Welcome! \(user.userName!)"
     }
     // MARK: Private
     private func congig() {

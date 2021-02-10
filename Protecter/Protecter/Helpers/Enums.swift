@@ -24,6 +24,7 @@ enum ScreenApp: String {
     case problem = "ProblemVC"
     case reportProblem = "ReportProblemVC"
     case state = "StateVC"
+    case stateProtect = "StateProtectVC"
     case module = "ModuleVC"
     
     // Others
@@ -36,7 +37,7 @@ enum ScreenApp: String {
             return "Login"
         }
         // Home
-        else if(self == .home || self == .menu || self == .team || self == .problem || self == .reportProblem || self == .state || self == .module) {
+        else if(self == .home || self == .menu || self == .team || self == .problem || self == .reportProblem || self == .state || self == .stateProtect || self == .module) {
             return "Home"
         }
         // Other
@@ -86,7 +87,7 @@ enum RoleUser: Int {
         case .lead_protecter:
             return [modules[0], modules[1], modules[2], modules[3], modules[4], modules[5]]
         case .protecter:
-            return [modules[0], modules[1], modules[4], modules[5]]
+            return [modules[0], modules[1], modules[4], modules[6]]
         }
     }
 }
