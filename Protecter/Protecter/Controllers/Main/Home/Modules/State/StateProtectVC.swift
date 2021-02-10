@@ -18,6 +18,8 @@ class StateProtectVC: BaseVC {
     
     //MARK: Action
     @IBAction func actionCreateState(_ sender: Any) {
+        let createStateVC = CreateStateVC()
+        self.push(createStateVC)
     }
     
     //MARK: Private
@@ -42,6 +44,11 @@ extension StateProtectVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 133
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailStateVC = DetailStateVC()
+        self.push(detailStateVC)
     }
     
 }

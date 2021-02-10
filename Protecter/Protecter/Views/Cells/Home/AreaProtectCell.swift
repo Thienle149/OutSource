@@ -11,6 +11,7 @@ class AreaProtectCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var imvSelect: UIImageView!
+    @IBOutlet weak var widthConstraintImage: NSLayoutConstraint!
     
     static let identifier = "AreaProtectCell"
     
@@ -22,6 +23,10 @@ class AreaProtectCell: UITableViewCell {
     
     public func setUp(title: String) {
         self.lblTitle.text = title
-//        self.imvSelect.image = isSelected ? #imageLiteral(resourceName: "icons8-unchecked-radio-button-96 (1)") : #imageLiteral(resourceName: "icons8-unchecked-radio-button-96")
+    }
+    
+    public func setUpOfState(title: String) {
+        self.widthConstraintImage.constant = 0
+        self.lblTitle.text = title
     }
 }

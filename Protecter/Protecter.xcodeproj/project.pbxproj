@@ -128,6 +128,12 @@
 		45E0BD3F25CC44F3005AF55A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0BCF125CC414E005AF55A /* Assets.xcassets */; };
 		45E0BD6625CC508C005AF55A /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E0BD6525CC508C005AF55A /* LocationModel.swift */; };
 		45E0BD6A25CC5BA2005AF55A /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E0BD6925CC5BA2005AF55A /* HomeVM.swift */; };
+		45EC07C225D3F82E004A01A3 /* DetailStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC07C025D3F82E004A01A3 /* DetailStateVC.swift */; };
+		45EC07C325D3F82E004A01A3 /* DetailStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EC07C125D3F82E004A01A3 /* DetailStateVC.xib */; };
+		45EC07C725D3FCC4004A01A3 /* CreateStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC07C525D3FCC4004A01A3 /* CreateStateVC.swift */; };
+		45EC07C825D3FCC4004A01A3 /* CreateStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EC07C625D3FCC4004A01A3 /* CreateStateVC.xib */; };
+		45EC07CD25D406F5004A01A3 /* FloatingStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC07CB25D406F5004A01A3 /* FloatingStateVC.swift */; };
+		45EC07CE25D406F5004A01A3 /* FloatingStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EC07CC25D406F5004A01A3 /* FloatingStateVC.xib */; };
 		5CAB94B440006D4B894EF268 /* Pods_Protecter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4BFA91902081AF38BFD512 /* Pods_Protecter.framework */; };
 /* End PBXBuildFile section */
 
@@ -256,6 +262,12 @@
 		45E0BCF125CC414E005AF55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E0BD6525CC508C005AF55A /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		45E0BD6925CC5BA2005AF55A /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		45EC07C025D3F82E004A01A3 /* DetailStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStateVC.swift; sourceTree = "<group>"; };
+		45EC07C125D3F82E004A01A3 /* DetailStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailStateVC.xib; sourceTree = "<group>"; };
+		45EC07C525D3FCC4004A01A3 /* CreateStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStateVC.swift; sourceTree = "<group>"; };
+		45EC07C625D3FCC4004A01A3 /* CreateStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateStateVC.xib; sourceTree = "<group>"; };
+		45EC07CB25D406F5004A01A3 /* FloatingStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingStateVC.swift; sourceTree = "<group>"; };
+		45EC07CC25D406F5004A01A3 /* FloatingStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingStateVC.xib; sourceTree = "<group>"; };
 		BD12955F467887D716D941FD /* Pods-Protecter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Protecter.release.xcconfig"; path = "Target Support Files/Pods-Protecter/Pods-Protecter.release.xcconfig"; sourceTree = "<group>"; };
 		BF4BFA91902081AF38BFD512 /* Pods_Protecter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Protecter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F743A0E0D8F47C2A85F2FE8F /* Pods-Protecter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Protecter.debug.xcconfig"; path = "Target Support Files/Pods-Protecter/Pods-Protecter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -625,6 +637,12 @@
 				4586C33A25D37F230040528A /* TabHistoryStateVC.swift */,
 				4586C33B25D37F230040528A /* TabHistoryStateVC.xib */,
 				4586C37425D3B0DF0040528A /* StateProtectVC.swift */,
+				45EC07C025D3F82E004A01A3 /* DetailStateVC.swift */,
+				45EC07C125D3F82E004A01A3 /* DetailStateVC.xib */,
+				45EC07C525D3FCC4004A01A3 /* CreateStateVC.swift */,
+				45EC07C625D3FCC4004A01A3 /* CreateStateVC.xib */,
+				45EC07CB25D406F5004A01A3 /* FloatingStateVC.swift */,
+				45EC07CC25D406F5004A01A3 /* FloatingStateVC.xib */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -742,6 +760,7 @@
 				4520135B25D15FE200B4457B /* AreaProtectCell.xib in Resources */,
 				4520131A25D0EDDC00B4457B /* DetailListProblemVC.xib in Resources */,
 				4567B87D25BB0E6D00CE1901 /* Rosario-Bold.ttf in Resources */,
+				45EC07CE25D406F5004A01A3 /* FloatingStateVC.xib in Resources */,
 				454212AF25D2922400387B30 /* AlertProblemVC.xib in Resources */,
 				4567B86325BB0D2100CE1901 /* LICENSE.txt in Resources */,
 				45ABD53725BD128600F2E01B /* ModuleCell.xib in Resources */,
@@ -762,6 +781,7 @@
 				4520130F25D0CE3900B4457B /* DetailHistoryProblemVC.xib in Resources */,
 				4567B86425BB0D2100CE1901 /* Roboto-BlackItalic.ttf in Resources */,
 				456C04EE25B9D7140025C9A6 /* Login.storyboard in Resources */,
+				45EC07C325D3F82E004A01A3 /* DetailStateVC.xib in Resources */,
 				45599F2D25C6C30200624780 /* TeamCell.xib in Resources */,
 				4520135625D15F0F00B4457B /* SelectAreaProtectVC.xib in Resources */,
 				45E0BD3F25CC44F3005AF55A /* Assets.xcassets in Resources */,
@@ -781,6 +801,7 @@
 				4567B87A25BB0E6D00CE1901 /* Rosario-LightItalic.ttf in Resources */,
 				4567B87F25BB0E6D00CE1901 /* Rosario-Medium.ttf in Resources */,
 				4520134625D13A6500B4457B /* ReportProblemCell.xib in Resources */,
+				45EC07C825D3FCC4004A01A3 /* CreateStateVC.xib in Resources */,
 				4586C33825D37EA90040528A /* Tab24HourStateVC.xib in Resources */,
 				4567B87E25BB0E6D00CE1901 /* Rosario-SemiBold.ttf in Resources */,
 				4567B86225BB0D2100CE1901 /* Roboto-Italic.ttf in Resources */,
@@ -886,6 +907,7 @@
 				4586C33225D37B1B0040528A /* StateVC.swift in Sources */,
 				456C051D25B9DD600025C9A6 /* Enums.swift in Sources */,
 				4520135525D15F0F00B4457B /* SelectAreaProtectVC.swift in Sources */,
+				45EC07C725D3FCC4004A01A3 /* CreateStateVC.swift in Sources */,
 				4520131325D0E8EC00B4457B /* GlobalModel.swift in Sources */,
 				4520135A25D15FE200B4457B /* AreaProtectCell.swift in Sources */,
 				4556AB5625BC932400716334 /* NotifyVC.swift in Sources */,
@@ -900,6 +922,7 @@
 				4569E9BC25C6EE7200B83895 /* TabListProblemVC.swift in Sources */,
 				456C04B225B9D5850025C9A6 /* LabelExtension.swift in Sources */,
 				4556AB4B25BC8AFF00716334 /* BaseLoginVC.swift in Sources */,
+				45EC07C225D3F82E004A01A3 /* DetailStateVC.swift in Sources */,
 				45ABD53625BD128600F2E01B /* ModuleCell.swift in Sources */,
 				4520130E25D0CE3900B4457B /* DetailHistoryProblemVC.swift in Sources */,
 				454212B725D2A82A00387B30 /* AlertCancelProblemVC.swift in Sources */,
@@ -917,6 +940,7 @@
 				456C04C225B9D5850025C9A6 /* UIViewExtension.swift in Sources */,
 				45599F2C25C6C30200624780 /* TeamCell.swift in Sources */,
 				45E0BCC225CC3E70005AF55A /* SceneDelegate.swift in Sources */,
+				45EC07CD25D406F5004A01A3 /* FloatingStateVC.swift in Sources */,
 				4520134125D1335B00B4457B /* ReportProblemVC.swift in Sources */,
 				45ABD53A25BD1D6C00F2E01B /* ModuleModel.swift in Sources */,
 				45A3C64325C6D9C500BF5B9E /* ModuleVC.swift in Sources */,
