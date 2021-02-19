@@ -22,7 +22,7 @@ class OTPRegisterVC: BaseLoginVC {
         self.otpView.fieldsCount = 6
         self.otpView.fieldBorderWidth = 0.5
         self.otpView.defaultBorderColor = UIColor.gray
-        self.otpView.filledBorderColor = Constants.Color.lineActive
+        self.otpView.filledBorderColor = Contants.Color.lineActive
         self.otpView.cursorColor = UIColor.red
         self.otpView.displayType = .square
         self.otpView.fieldSize = CGSize(width: 50, height: 70)

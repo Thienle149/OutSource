@@ -50,7 +50,7 @@ class LoginVC: BaseVC{
             let response = ResponseModel(dict: dict)
             if response.isOk {
                 let user = UserModel(dict: response.data!)
-                Constants.global.user = user
+                Contants.global.user = user
                 let mainVC = MainTabBarVC()
                 self.push(mainVC)
             } else {
@@ -63,7 +63,7 @@ class LoginVC: BaseVC{
                 let response = ResponseModel(dict: dict)
                 if response.isOk {
                     let user = UserModel(dict: response.data!)
-                    Constants.global.user = user
+                    Contants.global.user = user
                     let mainVC = MainTabBarVC()
                     self.push(mainVC)
                 } else {
@@ -104,13 +104,13 @@ class LoginVC: BaseVC{
 extension LoginVC: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField == tfPhoneNumber) {
-            linePhoneNumberView.backgroundColor = Constants.Color.lineActive
-            linePasswordView.backgroundColor = Constants.Color.lineInActive
+            linePhoneNumberView.backgroundColor = Contants.Color.lineActive
+            linePasswordView.backgroundColor = Contants.Color.lineInActive
             heightConstraintLinePhone.constant = 2
             heightConstraintLinePassword.constant = 1
         } else if(textField == tfPassword) {
-            linePhoneNumberView.backgroundColor = Constants.Color.lineInActive
-            linePasswordView.backgroundColor = Constants.Color.lineActive
+            linePhoneNumberView.backgroundColor = Contants.Color.lineInActive
+            linePasswordView.backgroundColor = Contants.Color.lineActive
             heightConstraintLinePhone.constant = 1
             heightConstraintLinePassword.constant = 2
         }

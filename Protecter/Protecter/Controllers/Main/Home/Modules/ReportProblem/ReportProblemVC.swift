@@ -23,7 +23,7 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
     
     private let spaceItem: CGFloat = 5.0
     private let numberItemOnColumn = 3
-    private let categoriesReportProblem = Constants.categoriesReportProblem
+    private let categoriesReportProblem = Contants.categoriesReportProblem
     @IBOutlet weak var heightClvReport: NSLayoutConstraint!
     
     //Public

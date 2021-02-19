@@ -60,7 +60,7 @@ class BaseVC: UIViewController {
     
     private func monitorNetwork() {
         if(needMonitorNetwork) {
-            observeNetwork = NotificationCenter.default.addObserver(forName: Notification.Name(Constants.NOTIFY_MONITOR_NETWORK), object: nil, queue: .main) { [weak self](notification) in
+            observeNetwork = NotificationCenter.default.addObserver(forName: Notification.Name(Contants.NOTIFY_MONITOR_NETWORK), object: nil, queue: .main) { [weak self](notification) in
                 if let statusNetwork = notification.object as? Bool {
                     self?.handleUIWhenNetworkChangeStatus(statusNetwork)
                 }
@@ -110,7 +110,7 @@ class BaseVC: UIViewController {
     }
     
     public func showLoading() {
-        SVProgressHUD.setForegroundColor(Constants.Color.main)
+        SVProgressHUD.setForegroundColor(Contants.Color.main)
         SVProgressHUD.show()
         self.view.isUserInteractionEnabled = false
     }

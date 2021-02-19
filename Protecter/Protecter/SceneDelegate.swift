@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let loginVC = Utils.storyboary(screen: .login, asClass: LoginVC.self)
         let navigationVC = UINavigationController(rootViewController: loginVC)
         navigationVC.modalPresentationStyle = .overFullScreen
-        navigationVC.navigationBar.barTintColor = Constants.Color.main
+        navigationVC.navigationBar.barTintColor = Contants.Color.main
         navigationVC.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationVC.isNavigationBarHidden = true
         

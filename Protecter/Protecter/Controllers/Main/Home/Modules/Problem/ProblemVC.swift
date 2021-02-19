@@ -14,7 +14,7 @@ class ProblemVC: BaseButtonBarPagerTabStripVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.headerView.backgroundColor = Constants.Color.main
+        self.headerView.backgroundColor = Contants.Color.main
     }
     @IBAction func actionBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

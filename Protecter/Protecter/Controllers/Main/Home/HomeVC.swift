@@ -36,10 +36,10 @@ class HomeVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.barTintColor = Constants.Color.main
+        self.navigationController?.navigationBar.barTintColor = Contants.Color.main
         
-        self.user = Constants.global.user
-        self.modules = Constants.global.user.role.getModule()
+        self.user = Contants.global.user
+        self.modules = Contants.global.user.role.getModule()
         
         self.lblWelcome.text = "Welcome! \(user.userName!)"
     }

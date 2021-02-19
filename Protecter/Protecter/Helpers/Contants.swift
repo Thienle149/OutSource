@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  Contants.swift
 //  Market
 //
 //  Created by Lê Minh Thiện on 12/9/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Constants: NSObject {
+class Contants: NSObject {
     
     class HOME {
         static let NUMBER_ITEM_CATEGORY = 4
@@ -29,7 +29,7 @@ class Constants: NSObject {
     
     static let MONITOR_NETWORK_TIMER = 0.5
     
-    static let modules: [ModuleModel] = [ModuleModel(title: "Đội", image: #imageLiteral(resourceName: "icons8-user-group-skin-type-7-96"), vc: Utils.storyboary(screen: .team, asClass: TeamVC.self)),
+    static let allModules: [ModuleModel] = [ModuleModel(title: "Đội", image: #imageLiteral(resourceName: "icons8-user-group-skin-type-7-96"), vc: Utils.storyboary(screen: .team, asClass: TeamVC.self)),
                                          ModuleModel(title: "Tuần Tra", image: #imageLiteral(resourceName: "icons8-security-guard-96"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Quản lý nhóm", image: #imageLiteral(resourceName: "icons8-attendance-80"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Lịch sử hoạt động", image: #imageLiteral(resourceName: "icons8-copybook-64"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),

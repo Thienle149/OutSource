@@ -13,7 +13,7 @@ class StateVC: BaseButtonBarPagerTabStripVC {
     @IBOutlet weak var headerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.headerView.backgroundColor = Constants.Color.main
+        self.headerView.backgroundColor = Contants.Color.main
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

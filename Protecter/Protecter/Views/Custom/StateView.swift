@@ -26,7 +26,7 @@ class StateView: UIView {
     
     @IBOutlet weak var lblSelectArea: UILabel!
     
-    let isProtecter = Constants.global.user.role == .protecter
+    let isProtecter = Contants.global.user.role == .protecter
     
     private var selectedIndex = 0;
 

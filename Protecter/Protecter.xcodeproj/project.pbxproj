@@ -88,7 +88,7 @@
 		456C04D725B9D64D0025C9A6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 456C04CF25B9D64D0025C9A6 /* README.md */; };
 		456C04D825B9D64D0025C9A6 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04D225B9D64D0025C9A6 /* OTPFieldView.swift */; };
 		456C04D925B9D64D0025C9A6 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04D325B9D64D0025C9A6 /* OTPTextField.swift */; };
-		456C04DE25B9D6B10025C9A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04DC25B9D6B10025C9A6 /* Constants.swift */; };
+		456C04DE25B9D6B10025C9A6 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04DC25B9D6B10025C9A6 /* Contants.swift */; };
 		456C04E825B9D7140025C9A6 /* OTPRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04E125B9D7140025C9A6 /* OTPRegisterVC.swift */; };
 		456C04E925B9D7140025C9A6 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04E225B9D7140025C9A6 /* NewPasswordVC.swift */; };
 		456C04EA25B9D7140025C9A6 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C04E325B9D7140025C9A6 /* ForgetPasswordVC.swift */; };
@@ -223,7 +223,7 @@
 		456C04D125B9D64D0025C9A6 /* OTPFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPFieldView.h; sourceTree = "<group>"; };
 		456C04D225B9D64D0025C9A6 /* OTPFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
 		456C04D325B9D64D0025C9A6 /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
-		456C04DC25B9D6B10025C9A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		456C04DC25B9D6B10025C9A6 /* Contants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		456C04E125B9D7140025C9A6 /* OTPRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPRegisterVC.swift; sourceTree = "<group>"; };
 		456C04E225B9D7140025C9A6 /* NewPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		456C04E325B9D7140025C9A6 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
@@ -498,7 +498,7 @@
 				456C051B25B9DD600025C9A6 /* Enums.swift */,
 				456C051A25B9DD600025C9A6 /* Utils.swift */,
 				456C051625B9DCB70025C9A6 /* NetworkService.swift */,
-				456C04DC25B9D6B10025C9A6 /* Constants.swift */,
+				456C04DC25B9D6B10025C9A6 /* Contants.swift */,
 				456C054D25B9EB550025C9A6 /* APIManager.swift */,
 				456C055025B9EB820025C9A6 /* ServerAPI.swift */,
 			);
@@ -916,7 +916,7 @@
 				456C04BF25B9D5850025C9A6 /* URLExtension.swift in Sources */,
 				456C054E25B9EB550025C9A6 /* APIManager.swift in Sources */,
 				456C051725B9DCB70025C9A6 /* NetworkService.swift in Sources */,
-				456C04DE25B9D6B10025C9A6 /* Constants.swift in Sources */,
+				456C04DE25B9D6B10025C9A6 /* Contants.swift in Sources */,
 				456C04B625B9D5850025C9A6 /* GestureExtension.swift in Sources */,
 				456C052025B9DFD40025C9A6 /* ResponseModel.swift in Sources */,
 				4586C33225D37B1B0040528A /* StateVC.swift in Sources */,

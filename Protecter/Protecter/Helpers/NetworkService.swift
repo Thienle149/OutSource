@@ -29,7 +29,7 @@ class NetworkService: NSObject {
     
     func monitor()  {
         monitorNetwork.pathUpdateHandler = { path in
-            DispatchQueue.global().asyncAfter(deadline: .now() + Constants.MONITOR_NETWORK_TIMER) {
+            DispatchQueue.global().asyncAfter(deadline: .now() + Contants.MONITOR_NETWORK_TIMER) {
                 do {
                     self.reach = try Reachability(hostname: "www.apple.com")
                     var isNetwork = false
@@ -40,7 +40,7 @@ class NetworkService: NSObject {
                     } else {
                         isNetwork = false
                     }
-                    NotificationCenter.default.post(name: Notification.Name(Constants.NOTIFY_MONITOR_NETWORK), object: isNetwork);
+                    NotificationCenter.default.post(name: Notification.Name(Contants.NOTIFY_MONITOR_NETWORK), object: isNetwork);
                 } catch {
                     print(error)
                 }

@@ -31,9 +31,9 @@ class DetailListProblemVC: BaseVC {
         
         self.setLocation(coordinate: CLLocationCoordinate2D(latitude: 10.892791969607861, longitude: 106.60913298851986))
         
-        if Constants.global.user.role == .protecter {
+        if Contants.global.user.role == .protecter {
             self.btnHandle.isHidden = true
-        } else if Constants.global.user.role == .lead_protecter {
+        } else if Contants.global.user.role == .lead_protecter {
             self.btnHandle.isHidden = false
         }
         //

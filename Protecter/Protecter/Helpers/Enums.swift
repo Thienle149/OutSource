@@ -77,7 +77,7 @@ enum RoleUser: Int {
     
     func getModule() -> [ModuleModel] {
         
-        let modules = Constants.modules
+        let modules = Contants.allModules
         
         switch self {
         case .admin:
