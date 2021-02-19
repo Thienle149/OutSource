@@ -1009,9 +1009,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-t1-htL">
                                         <rect key="frame" x="8" y="11.5" width="25" height="25"/>
                                         <connections>
-                                            <action selector="actionBack:" destination="Ve3-Wd-RjW" eventType="touchUpInside" id="YZt-7F-txn"/>
-                                            <action selector="actionBack:" destination="iaJ-Ty-41e" eventType="touchUpInside" id="kbg-Mv-ESB"/>
-                                            <action selector="actionClose:" destination="J8q-J2-zvh" eventType="touchUpInside" id="2UC-Oq-Syj"/>
+                                            <action selector="actionBack:" destination="iaJ-Ty-41e" eventType="touchUpInside" id="tFO-PE-Vi6"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiện trạng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-5h-hFf">
@@ -1053,20 +1051,16 @@
                                     <constraint firstItem="QRo-Ut-nDa" firstAttribute="leading" secondItem="2mS-6D-2lm" secondAttribute="leading" constant="8" id="xRP-Wn-ZIh"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vja-au-Pkh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifq-uc-P8I" customClass="StateView" customModule="Protecter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="414" height="677"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="iaJ-Ty-41e" id="1eI-c6-nHJ"/>
-                                    <outlet property="delegate" destination="iaJ-Ty-41e" id="QQT-BF-vPJ"/>
-                                </connections>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quH-9z-lC4">
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-I5-Tr7">
                                 <rect key="frame" x="105.5" y="789" width="203" height="53"/>
-                                <color key="backgroundColor" red="0.16078431372549018" green="0.66666666666666663" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="1UC-jy-xyC"/>
-                                    <constraint firstAttribute="width" constant="203" id="Bpp-Db-kwN"/>
+                                    <constraint firstAttribute="width" constant="203" id="9Ih-nS-BUE"/>
+                                    <constraint firstAttribute="height" constant="53" id="npz-N5-3zs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                 <state key="normal" title="Tạo hiện trạng">
@@ -1077,32 +1071,29 @@
                                         <real key="value" value="26.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="actionCreateState:" destination="iaJ-Ty-41e" eventType="touchUpInside" id="48f-UX-k5g"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MZ0-Qf-Hzb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MZ0-Qf-Hzb" firstAttribute="trailing" secondItem="2mS-6D-2lm" secondAttribute="trailing" id="2ws-uz-rJ8"/>
-                            <constraint firstItem="quH-9z-lC4" firstAttribute="top" secondItem="vja-au-Pkh" secondAttribute="bottom" constant="20" id="Gc6-jc-VQM"/>
-                            <constraint firstItem="MZ0-Qf-Hzb" firstAttribute="bottom" secondItem="quH-9z-lC4" secondAttribute="bottom" constant="20" id="PaI-Av-V04"/>
-                            <constraint firstItem="vja-au-Pkh" firstAttribute="leading" secondItem="MZ0-Qf-Hzb" secondAttribute="leading" id="SRj-ux-3Z9"/>
-                            <constraint firstItem="vja-au-Pkh" firstAttribute="top" secondItem="2mS-6D-2lm" secondAttribute="bottom" id="kXp-IM-Z4V"/>
-                            <constraint firstItem="quH-9z-lC4" firstAttribute="centerX" secondItem="MZ0-Qf-Hzb" secondAttribute="centerX" id="leA-We-2Ib"/>
-                            <constraint firstItem="MZ0-Qf-Hzb" firstAttribute="trailing" secondItem="vja-au-Pkh" secondAttribute="trailing" id="nUF-zT-Tqh"/>
+                            <constraint firstItem="1ci-I5-Tr7" firstAttribute="top" secondItem="ifq-uc-P8I" secondAttribute="bottom" constant="20" id="42E-3l-W6C"/>
+                            <constraint firstItem="ifq-uc-P8I" firstAttribute="leading" secondItem="MZ0-Qf-Hzb" secondAttribute="leading" id="Q2c-VV-703"/>
+                            <constraint firstItem="MZ0-Qf-Hzb" firstAttribute="trailing" secondItem="ifq-uc-P8I" secondAttribute="trailing" id="fi3-CC-da8"/>
+                            <constraint firstItem="MZ0-Qf-Hzb" firstAttribute="bottom" secondItem="1ci-I5-Tr7" secondAttribute="bottom" constant="20" id="hRX-9h-cJE"/>
                             <constraint firstItem="2mS-6D-2lm" firstAttribute="top" secondItem="MZ0-Qf-Hzb" secondAttribute="top" id="pPF-qH-SLF"/>
+                            <constraint firstItem="ifq-uc-P8I" firstAttribute="top" secondItem="2mS-6D-2lm" secondAttribute="bottom" id="pwr-sf-5vJ"/>
                             <constraint firstItem="2mS-6D-2lm" firstAttribute="leading" secondItem="Ele-l9-txO" secondAttribute="leading" id="rHa-HF-5XV"/>
+                            <constraint firstItem="1ci-I5-Tr7" firstAttribute="centerX" secondItem="MZ0-Qf-Hzb" secondAttribute="centerX" id="rWW-XX-pn7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tbvState" destination="vja-au-Pkh" id="7Ua-kH-B3y"/>
+                        <outlet property="stateView" destination="ifq-uc-P8I" id="auv-7F-2RM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppe-v8-TJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4039" y="-216"/>
+            <point key="canvasLocation" x="4037.68115942029" y="-216.29464285714286"/>
         </scene>
         <!--StateVC-->
         <scene sceneID="YuV-h6-qLF">
@@ -1184,9 +1175,29 @@
                                 <cells/>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tER-nh-VhA">
-                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                                <rect key="frame" x="0.0" y="136" width="414" height="633"/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jv0-BG-qrP">
+                                <rect key="frame" x="105.5" y="789" width="203" height="53"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="4DT-ry-aiR"/>
+                                    <constraint firstAttribute="width" constant="203" id="lHU-ns-NQy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <state key="normal" title="Tạo hiện trạng">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionCreateState:" destination="J8q-J2-zvh" eventType="touchUpInside" id="NSP-Qi-ctH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5iP-yC-dOF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1194,13 +1205,15 @@
                             <constraint firstItem="wl0-WC-o1D" firstAttribute="trailing" secondItem="5iP-yC-dOF" secondAttribute="trailing" id="4Dr-YW-K2h"/>
                             <constraint firstItem="5lB-CL-mVb" firstAttribute="trailing" secondItem="5iP-yC-dOF" secondAttribute="trailing" id="DLg-2B-aMV"/>
                             <constraint firstItem="wl0-WC-o1D" firstAttribute="leading" secondItem="5iP-yC-dOF" secondAttribute="leading" id="Vvk-Ca-4QA"/>
+                            <constraint firstItem="5iP-yC-dOF" firstAttribute="bottom" secondItem="jv0-BG-qrP" secondAttribute="bottom" constant="20" id="WWx-7l-9lT"/>
                             <constraint firstItem="tER-nh-VhA" firstAttribute="trailing" secondItem="5iP-yC-dOF" secondAttribute="trailing" id="Yt0-mt-4pb"/>
+                            <constraint firstItem="jv0-BG-qrP" firstAttribute="top" secondItem="tER-nh-VhA" secondAttribute="bottom" constant="20" id="b5H-g1-930"/>
                             <constraint firstItem="wl0-WC-o1D" firstAttribute="top" secondItem="5iP-yC-dOF" secondAttribute="top" id="dHf-dL-1sz"/>
                             <constraint firstItem="5lB-CL-mVb" firstAttribute="leading" secondItem="5iP-yC-dOF" secondAttribute="leading" id="ivw-gF-rWn"/>
                             <constraint firstItem="tER-nh-VhA" firstAttribute="leading" secondItem="5iP-yC-dOF" secondAttribute="leading" id="qRd-PS-FJo"/>
                             <constraint firstItem="tER-nh-VhA" firstAttribute="top" secondItem="5lB-CL-mVb" secondAttribute="bottom" id="wah-cj-nWt"/>
+                            <constraint firstItem="jv0-BG-qrP" firstAttribute="centerX" secondItem="5iP-yC-dOF" secondAttribute="centerX" id="x6u-f4-MG1"/>
                             <constraint firstItem="5lB-CL-mVb" firstAttribute="top" secondItem="wl0-WC-o1D" secondAttribute="bottom" id="yAX-vs-GMG"/>
-                            <constraint firstItem="tER-nh-VhA" firstAttribute="bottom" secondItem="5iP-yC-dOF" secondAttribute="bottom" id="zcL-Zj-JR8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1211,7 +1224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjo-PF-Hdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4052" y="438"/>
+            <point key="canvasLocation" x="4049" y="455"/>
         </scene>
         <!--ModuleVC-->
         <scene sceneID="rsJ-au-Q3H">

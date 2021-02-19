@@ -20,7 +20,7 @@ class Utils {
         view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
         view.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 0).isActive = true
         view.bottomAnchor.constraint(equalTo: parent.bottomAnchor, constant: 0).isActive = true
-        view.leadingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 0).isActive = true
+        view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 0).isActive = true
     }
     
     static let FORMAT_DATE_NOW: String = "yyyy-MM-dd"

@@ -27,4 +27,16 @@ class StateVC: BaseButtonBarPagerTabStripVC {
     @IBAction func actionClose(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBAction func actionCreateState(_ sender: Any) {
+        let createStateVC = CreateStateVC()
+        self.navigationController?.pushViewController(createStateVC, animated: true)
+    }
+}
+extension StateVC: StateViewDelegate {
+    func didSelectState() {
+        let detailStateVC = DetailStateVC()
+        self.navigationController?.pushViewController(detailStateVC, animated: true)
+    }
 }

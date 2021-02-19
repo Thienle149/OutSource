@@ -20,6 +20,8 @@
 		4520135625D15F0F00B4457B /* SelectAreaProtectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4520135425D15F0F00B4457B /* SelectAreaProtectVC.xib */; };
 		4520135A25D15FE200B4457B /* AreaProtectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4520135825D15FE200B4457B /* AreaProtectCell.swift */; };
 		4520135B25D15FE200B4457B /* AreaProtectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4520135925D15FE200B4457B /* AreaProtectCell.xib */; };
+		4536960D25DF6668001A127B /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536960C25DF6668001A127B /* StateView.swift */; };
+		4536961125DF668F001A127B /* StateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4536961025DF668F001A127B /* StateView.xib */; };
 		453B647225BC2D81004B5E12 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B647125BC2D81004B5E12 /* MainTabBarVC.swift */; };
 		453B647525BC428A004B5E12 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B647425BC428A004B5E12 /* MenuVC.swift */; };
 		453B647825BC42C8004B5E12 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B647725BC42C8004B5E12 /* HomeVC.swift */; };
@@ -151,6 +153,8 @@
 		4520135425D15F0F00B4457B /* SelectAreaProtectVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectAreaProtectVC.xib; sourceTree = "<group>"; };
 		4520135825D15FE200B4457B /* AreaProtectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaProtectCell.swift; sourceTree = "<group>"; };
 		4520135925D15FE200B4457B /* AreaProtectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaProtectCell.xib; sourceTree = "<group>"; };
+		4536960C25DF6668001A127B /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		4536961025DF668F001A127B /* StateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateView.xib; sourceTree = "<group>"; };
 		453B647125BC2D81004B5E12 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
 		453B647425BC428A004B5E12 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		453B647725BC42C8004B5E12 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -310,6 +314,15 @@
 				4520135425D15F0F00B4457B /* SelectAreaProtectVC.xib */,
 			);
 			path = ReportProblem;
+			sourceTree = "<group>";
+		};
+		4536960B25DF6623001A127B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4536960C25DF6668001A127B /* StateView.swift */,
+				4536961025DF668F001A127B /* StateView.xib */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		4556AB4D25BC8E1B00716334 /* Home */ = {
@@ -528,6 +541,7 @@
 		456C049D25B9D5090025C9A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4536960B25DF6623001A127B /* Custom */,
 				45ABD52725BD119400F2E01B /* Cells */,
 			);
 			path = Views;
@@ -763,6 +777,7 @@
 				45EC07CE25D406F5004A01A3 /* FloatingStateVC.xib in Resources */,
 				454212AF25D2922400387B30 /* AlertProblemVC.xib in Resources */,
 				4567B86325BB0D2100CE1901 /* LICENSE.txt in Resources */,
+				4536961125DF668F001A127B /* StateView.xib in Resources */,
 				45ABD53725BD128600F2E01B /* ModuleCell.xib in Resources */,
 				4567B85F25BB0D2100CE1901 /* Roboto-ThinItalic.ttf in Resources */,
 				4567B88225BB0E6D00CE1901 /* Rosario-SemiBoldItalic.ttf in Resources */,
@@ -941,6 +956,7 @@
 				45599F2C25C6C30200624780 /* TeamCell.swift in Sources */,
 				45E0BCC225CC3E70005AF55A /* SceneDelegate.swift in Sources */,
 				45EC07CD25D406F5004A01A3 /* FloatingStateVC.swift in Sources */,
+				4536960D25DF6668001A127B /* StateView.swift in Sources */,
 				4520134125D1335B00B4457B /* ReportProblemVC.swift in Sources */,
 				45ABD53A25BD1D6C00F2E01B /* ModuleModel.swift in Sources */,
 				45A3C64325C6D9C500BF5B9E /* ModuleVC.swift in Sources */,

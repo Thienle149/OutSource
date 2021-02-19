@@ -14,7 +14,7 @@ class BaseButtonBarPagerTabStripVC: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarBackgroundColor = Constants.Color.main
         settings.style.buttonBarItemBackgroundColor = Constants.Color.main
         settings.style.selectedBarBackgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        settings.style.buttonBarItemFont = UIFont(name: "Roboto-Medium", size:24) ?? UIFont.systemFont(ofSize: 12)
+        settings.style.buttonBarItemFont = UIFont(name: "Roboto-Medium", size: 18) ?? UIFont.systemFont(ofSize: 12)
         settings.style.selectedBarHeight = 3.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemsShouldFillAvailableWidth = true

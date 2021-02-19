@@ -8,23 +8,17 @@
 import UIKit
 
 class StateProtectVC: BaseVC {
-
-    @IBOutlet weak var tbvState: UITableView!
+    
+    @IBOutlet weak var stateView: StateView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.config()
     }
     
-    //MARK: Action
-    @IBAction func actionCreateState(_ sender: Any) {
-        let createStateVC = CreateStateVC()
-        self.push(createStateVC)
-    }
-    
-    //MARK: Private
     private func config() {
-        self.tbvState.register(UINib(nibName: StateCell.identifier, bundle: nil), forCellReuseIdentifier: StateCell.identifier)
+        self.stateView.delegate = self
+        self.stateView.vc = self
     }
     
     @IBAction func actionBack(_ sender: Any) {
@@ -32,23 +26,9 @@ class StateProtectVC: BaseVC {
     }
 }
 
-extension StateProtectVC: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: StateCell.identifier) as! StateCell
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 133
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension StateProtectVC: StateViewDelegate {
+    func didSelectState() {
         let detailStateVC = DetailStateVC()
         self.push(detailStateVC)
     }
-    
 }
