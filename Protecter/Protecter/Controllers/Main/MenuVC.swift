@@ -24,9 +24,13 @@ class MenuVC: BaseVC {
     }
     
     @IBAction func logOut(_ sender: Any) {
-        UIView.transition(with: self.view.window!, duration: 0.5, options: .transitionCrossDissolve) {
+        UIView.transition(with: self.view.window!, duration: 0.5, options: .curveEaseInOut) {
+            
+            Utils.removeSessionApp()
             
             self.navigationController?.popToRootViewController(animated: false)
+            
+            
         }
     }
 }

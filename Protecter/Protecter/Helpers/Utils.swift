@@ -97,4 +97,21 @@ class Utils {
         }
     }
     
+    static func saveSessionApp(user: UserModel) {
+        if let userID = user.userID, let userName = user.userName,let phone = user.phone, let password = user.password, let tokenID = user.tokenID{
+            UserDefaults.standard.set(["userID": userID, "userName": userName, "phone": phone, "password": password, "tokenID": tokenID, "role": user.role.rawValue], forKey: Contants.userSessionKey)
+        }
+    }
+    
+    static func getUserFromUserDefault() -> UserModel? {
+        if let dict = UserDefaults.standard.value(forKey: Contants.userSessionKey) as? [String: Any?] {
+            return UserModel(dict: dict)
+        }
+        return nil
+    }
+    
+    static func removeSessionApp() {
+        UserDefaults.standard.removeObject(forKey: Contants.userSessionKey)
+        Contants.global.user = nil
+    }
 }

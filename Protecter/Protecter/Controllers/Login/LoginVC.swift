@@ -29,7 +29,11 @@ class LoginVC: APIController<LoginVM>{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.isHiddenNavigationBar = true
+        if let user = Contants.global.user {
+            tfPhoneNumber.text = user.phone
+            tfPassword.text = user.password
+            self.actionLogin(self.btnLogin!)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,69 +52,19 @@ class LoginVC: APIController<LoginVM>{
         self.showLoading()
         let (allow, errs) = vm.validate(phone: self.tfPhoneNumber.text ?? "", password: self.tfPassword.text ?? "")
         if allow {
-            if self.tfPhoneNumber.text == "0389382432" {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-            Utils.readFileJson(fileName: "userLogin") { (dict) in
-                let response = ResponseModel(dict: dict)
-                if response.isOk {
-                    let user = UserModel(dict: response.data!)
-                    Contants.global.user = user
+            vm.login(phone: self.tfPhoneNumber.text ?? "", password: self.tfPassword.text ?? "") { (success, err) in
+                if success {
                     let mainVC = MainTabBarVC()
                     self.push(mainVC)
                 } else {
-                    self.showToast(response.messageText!)
+                    self.showToast(err?.rawValue ?? "")
                 }
                 self.hideLoading()
-            }}} else if tfPhoneNumber.text == "0969144852" {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                Utils.readFileJson(fileName: "leadProtecter") { (dict) in
-                    let response = ResponseModel(dict: dict)
-                    if response.isOk {
-                        let user = UserModel(dict: response.data!)
-                        Contants.global.user = user
-                        let mainVC = MainTabBarVC()
-                        self.push(mainVC)
-                    } else {
-                        self.showToast(response.messageText!)
-                    }
-                    self.hideLoading()
-                }}
             }
         } else  {
             self.showToast(errs.description)
             self.hideLoading()
         }
-//        if self.tfPhoneNumber.text == "0389382432" {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-//        Utils.readFileJson(fileName: "userLogin") { (dict) in
-//            let response = ResponseModel(dict: dict)
-//            if response.isOk {
-//                let user = UserModel(dict: response.data!)
-//                Contants.global.user = user
-//                let mainVC = MainTabBarVC()
-//                self.push(mainVC)
-//            } else {
-//                self.showToast(response.messageText!)
-//            }
-//            self.hideLoading()
-//        }}} else if tfPhoneNumber.text == "0969144852" {
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-//            Utils.readFileJson(fileName: "leadProtecter") { (dict) in
-//                let response = ResponseModel(dict: dict)
-//                if response.isOk {
-//                    let user = UserModel(dict: response.data!)
-//                    Contants.global.user = user
-//                    let mainVC = MainTabBarVC()
-//                    self.push(mainVC)
-//                } else {
-//                    self.showToast(response.messageText!)
-//                }
-//                self.hideLoading()
-//            }}
-//        } else {
-//            self.hideLoading()
-//            self.showToast("Tài khoản không chính xác")
-//        }
     }
     
     

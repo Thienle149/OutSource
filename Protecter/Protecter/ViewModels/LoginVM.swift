@@ -34,8 +34,35 @@ class LoginVM: BaseAPIVM {
         return (false, errors)
     }
     
-    public func login(phone: String, password: String, success: @escaping((Bool) -> Void)) {
-        manager.call(path: .login, method: .post, params: nil, controller: controller)
+    public func login(phone: String, password: String, success: @escaping((Bool, ErrorLogin?) -> Void)) {
+        if phone == "0389382432" {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+        Utils.readFileJson(fileName: "userLogin") { (dict) in
+            let response = ResponseModel(dict: dict)
+            if response.isOk {
+                let user = UserModel(dict: response.data!)
+                Contants.global.user = user
+                Utils.saveSessionApp(user: user)
+                success(true, nil)
+//                let mainVC = MainTabBarVC()
+//                self.push(mainVC)
+            } else {
+                success(false, .notSuccess)
+            }
+        }}} else if phone == "0969144852" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            Utils.readFileJson(fileName: "leadProtecter") { (dict) in
+                let response = ResponseModel(dict: dict)
+                if response.isOk {
+                    let user = UserModel(dict: response.data!)
+                    Contants.global.user = user
+                    Utils.saveSessionApp(user: user)
+                    success(true, nil)
+                } else {
+                    success(false, .notSuccess)
+                }
+            }}
+        }
     }
     
     override func handleAPI(path: ServerAPI, method: HTTPMethod, params: [String : Any]?, tag: String, completed json: [String : Any?]?) {

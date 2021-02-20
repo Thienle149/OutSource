@@ -55,8 +55,9 @@ enum ErrorLogin: String {
     case email = "Email không hợp lệ"
     case phone = "Phone không hợp lệ"
     case password = "Vui lòng nhập password"
+    
+    case notSuccess = "Tài khoản không chính xác"
 }
-
 enum TypeLog: String {
     case know = "🟢"
     case firebase = "🟠"

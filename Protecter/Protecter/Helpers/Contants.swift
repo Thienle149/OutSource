@@ -49,4 +49,6 @@ class Contants: NSObject {
     ]
     
     static let global = GlobalModel()
+    
+    static let userSessionKey = "UserSessionKey"
 }

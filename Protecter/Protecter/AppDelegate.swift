@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyCNT-h85oxeEGcxN006iLCHaYJPecubBCA")
         GMSPlacesClient.provideAPIKey("AIzaSyCNT-h85oxeEGcxN006iLCHaYJPecubBCA")
+        if let user = Utils.getUserFromUserDefault() {
+            Contants.global.user = user
+        }
         return true
     }
 

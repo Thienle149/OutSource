@@ -35,7 +35,7 @@ class APIManager {
         
         controller.showLoading()
         
-        AF.request(urlString!.absoluteString, method: method, parameters: params).responseJSON { [weak self] (result) in
+        AF.request(urlString!.absoluteString, method: method, parameters: params, headers: headers).responseJSON { [weak self] (result) in
             if let dict = result.value as? [String: Any?] {
                 let response = ResponseModel(dict: dict)
                 if response.isOk {

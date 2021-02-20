@@ -6,7 +6,9 @@
   "data": {
     "userID": 12,
     "userName": "Lea",
-    "tokend": null,
+    "phone": "0969144852",
+    "tokenID": "tokenID4852",
+    "password": "1",
     "roleUser": 3
   }
 }
