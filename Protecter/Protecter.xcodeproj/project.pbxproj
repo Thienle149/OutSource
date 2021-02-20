@@ -105,6 +105,10 @@
 		456C052A25B9E1900025C9A6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456C052925B9E1900025C9A6 /* Home.storyboard */; };
 		456C054E25B9EB550025C9A6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C054D25B9EB550025C9A6 /* APIManager.swift */; };
 		456C055125B9EB820025C9A6 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C055025B9EB820025C9A6 /* ServerAPI.swift */; };
+		4577030B25E0B90A00642C2B /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577030A25E0B90A00642C2B /* APIController.swift */; };
+		4577030F25E0BC9200642C2B /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577030E25E0BC9200642C2B /* BaseVM.swift */; };
+		4577031325E0C3B100642C2B /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577031225E0C3B100642C2B /* LoginVM.swift */; };
+		4577031625E0CA8A00642C2B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577031525E0CA8900642C2B /* StringExtension.swift */; };
 		4586C33225D37B1B0040528A /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C33125D37B1B0040528A /* StateVC.swift */; };
 		4586C33725D37EA90040528A /* Tab24HourStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C33525D37EA90040528A /* Tab24HourStateVC.swift */; };
 		4586C33825D37EA90040528A /* Tab24HourStateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4586C33625D37EA90040528A /* Tab24HourStateVC.xib */; };
@@ -240,6 +244,10 @@
 		456C052925B9E1900025C9A6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		456C054D25B9EB550025C9A6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		456C055025B9EB820025C9A6 /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		4577030A25E0B90A00642C2B /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		4577030E25E0BC9200642C2B /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		4577031225E0C3B100642C2B /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		4577031525E0CA8900642C2B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4586C33125D37B1B0040528A /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
 		4586C33525D37EA90040528A /* Tab24HourStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab24HourStateVC.swift; sourceTree = "<group>"; };
 		4586C33625D37EA90040528A /* Tab24HourStateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tab24HourStateVC.xib; sourceTree = "<group>"; };
@@ -533,7 +541,9 @@
 		456C049C25B9D4BE0025C9A6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4577030D25E0BC5900642C2B /* Base */,
 				45E0BD6825CC5B90005AF55A /* Home */,
+				4577031225E0C3B100642C2B /* LoginVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -565,6 +575,7 @@
 				456C04B025B9D5850025C9A6 /* UIViewExtension.swift */,
 				456C04AD25B9D5840025C9A6 /* URLExtension.swift */,
 				4567B88E25BB234F00CE1901 /* Storyboard+ext.swift */,
+				4577031525E0CA8900642C2B /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -608,6 +619,7 @@
 			children = (
 				456C04F225B9DAF90025C9A6 /* BaseVC.swift */,
 				4586C34625D383280040528A /* BaseButtonBarPagerTabStripVC.swift */,
+				4577030A25E0B90A00642C2B /* APIController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -640,6 +652,14 @@
 				456C052225B9E0B80025C9A6 /* UserModel.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		4577030D25E0BC5900642C2B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4577030E25E0BC9200642C2B /* BaseVM.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4586C33025D37B060040528A /* State */ = {
@@ -899,13 +919,16 @@
 				45E0BD6A25CC5BA2005AF55A /* HomeVM.swift in Sources */,
 				45A3C63E25C6D18500BF5B9E /* ShiftModel.swift in Sources */,
 				4520131925D0EDDC00B4457B /* DetailListProblemVC.swift in Sources */,
+				4577031625E0CA8A00642C2B /* StringExtension.swift in Sources */,
 				456C04BC25B9D5850025C9A6 /* FontExtension.swift in Sources */,
 				456C04E825B9D7140025C9A6 /* OTPRegisterVC.swift in Sources */,
+				4577030B25E0B90A00642C2B /* APIController.swift in Sources */,
 				456C051C25B9DD600025C9A6 /* Utils.swift in Sources */,
 				456C04F325B9DAF90025C9A6 /* BaseVC.swift in Sources */,
 				45E0BCC625CC3E76005AF55A /* AppDelegate.swift in Sources */,
 				4586C37925D3B1720040528A /* StateCell.swift in Sources */,
 				456C04B425B9D5850025C9A6 /* ScrollViewExtension.swift in Sources */,
+				4577031325E0C3B100642C2B /* LoginVM.swift in Sources */,
 				4567B88F25BB234F00CE1901 /* Storyboard+ext.swift in Sources */,
 				45E0BD6625CC508C005AF55A /* LocationModel.swift in Sources */,
 				456C04B825B9D5850025C9A6 /* ApplicationExtension.swift in Sources */,
@@ -937,6 +960,7 @@
 				4569E9BC25C6EE7200B83895 /* TabListProblemVC.swift in Sources */,
 				456C04B225B9D5850025C9A6 /* LabelExtension.swift in Sources */,
 				4556AB4B25BC8AFF00716334 /* BaseLoginVC.swift in Sources */,
+				4577030F25E0BC9200642C2B /* BaseVM.swift in Sources */,
 				45EC07C225D3F82E004A01A3 /* DetailStateVC.swift in Sources */,
 				45ABD53625BD128600F2E01B /* ModuleCell.swift in Sources */,
 				4520130E25D0CE3900B4457B /* DetailHistoryProblemVC.swift in Sources */,

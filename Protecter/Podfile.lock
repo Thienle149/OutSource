@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.4.1)
   - EasyTipView (2.0.4)
   - ESTabBarController-swift (2.8.0)
   - Firebase (6.25.0):
@@ -199,6 +200,7 @@ PODS:
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - EasyTipView (~> 2.0.4)
   - ESTabBarController-swift
   - Firebase (= 6.25.0)
@@ -222,6 +224,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - EasyTipView
     - ESTabBarController-swift
     - Firebase
@@ -255,6 +258,7 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   EasyTipView: 4f8beae0a82db2ca4a9b5fd658785fc5f61d296b
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
   Firebase: 5719b4f965f76643241a1bb8244483ff6117db39
@@ -287,6 +291,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 3a56147594257024339a38cf7312154b9f6bacf4
+PODFILE CHECKSUM: f4960743b9f94cafd0f33b528bf70b3d5b6fe61c
 
 COCOAPODS: 1.10.1

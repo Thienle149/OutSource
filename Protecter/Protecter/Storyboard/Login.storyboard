@@ -32,20 +32,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_app" translatesAutoresizingMaskIntoConstraints="NO" id="ryk-0e-MCO">
-                                <rect key="frame" x="157" y="222.5" width="100" height="101"/>
+                                <rect key="frame" x="157" y="223" width="100" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ryk-0e-MCO" secondAttribute="height" multiplier="99:100" id="Rcv-Q8-EPn"/>
                                     <constraint firstAttribute="width" constant="100" id="rEr-j1-kg1"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4B-yp-m8p">
-                                <rect key="frame" x="167.5" y="333.5" width="79" height="18.5"/>
+                                <rect key="frame" x="167.5" y="334" width="79" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Rosario-Bold" family="Rosario" pointSize="15.5"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.36078431370000003" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qem-6w-BjW">
-                                <rect key="frame" x="0.0" y="387" width="414" height="132"/>
+                                <rect key="frame" x="0.0" y="387.5" width="414" height="131"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-iphone-90" translatesAutoresizingMaskIntoConstraints="NO" id="BfW-bB-zeQ">
                                         <rect key="frame" x="45" y="24.5" width="25" height="25"/>
@@ -55,7 +55,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhx-eg-vmN">
-                                        <rect key="frame" x="42" y="76.5" width="330" height="16.5"/>
+                                        <rect key="frame" x="42" y="75.5" width="330" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -75,28 +75,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W1-g9-ymg" userLabel="linePhoneView">
-                                        <rect key="frame" x="42" y="54.5" width="330" height="2"/>
+                                        <rect key="frame" x="42" y="54.5" width="330" height="1"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="coX-B7-lXf"/>
+                                            <constraint firstAttribute="height" constant="1" id="coX-B7-lXf"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-lock-90" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-ge-wDG">
-                                        <rect key="frame" x="45" y="101" width="25" height="25"/>
+                                        <rect key="frame" x="45" y="100" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="C1M-B7-YtY"/>
                                             <constraint firstAttribute="height" constant="25" id="HTF-Fy-mwY"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfX-bg-scC" userLabel="linePasswordView">
-                                        <rect key="frame" x="42" y="131" width="330" height="1"/>
+                                        <rect key="frame" x="42" y="130" width="330" height="1"/>
                                         <color key="backgroundColor" systemColor="darkTextColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="pu0-Px-TL8"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5k5-Bn-plw">
-                                        <rect key="frame" x="73" y="105.5" width="299" height="16"/>
+                                        <rect key="frame" x="73" y="104.5" width="299" height="16"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                         <connections>
@@ -183,7 +183,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s4-Fz-4pF">
-                                <rect key="frame" x="42" y="549" width="330" height="40"/>
+                                <rect key="frame" x="42" y="548.5" width="330" height="40"/>
                                 <color key="backgroundColor" red="0.16078431372549018" green="0.66666666666666663" blue="0.88235294117647056" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0fc-3x-fM2"/>
@@ -202,7 +202,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAJ-D3-ecx">
-                                <rect key="frame" x="156.5" y="614" width="101" height="28"/>
+                                <rect key="frame" x="156.5" y="613.5" width="101" height="28"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                 <state key="normal" title="Quên mật khẩu ?">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -212,7 +212,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWg-TN-MtI">
-                                <rect key="frame" x="183" y="642" width="48" height="28"/>
+                                <rect key="frame" x="183" y="641.5" width="48" height="28"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                 <state key="normal" title="Đăng ký">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -53,6 +53,7 @@ enum ScreenApp: String {
 // MARK: Error
 enum ErrorLogin: String {
     case email = "Email không hợp lệ"
+    case phone = "Phone không hợp lệ"
     case password = "Vui lòng nhập password"
 }
 
@@ -62,12 +63,12 @@ enum TypeLog: String {
     case unknow = "🔴"
 }
 
-enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
-    case put = "PUT"
-    case delete = "DELETE"
-}
+//enum HTTPMethod: String {
+//    case get = "GET"
+//    case post = "POST"
+//    case put = "PUT"
+//    case delete = "DELETE"
+//}
 
 enum RoleUser: Int {
     case admin = 1

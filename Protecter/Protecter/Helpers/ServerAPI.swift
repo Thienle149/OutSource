@@ -7,8 +7,9 @@
 
 import Foundation
 
-class ServerAPI {
+enum ServerAPI: String {
     
-    static let urlHost = "192.168.1.1";
-    static let pathLogin = "/login";
+    case urlHost = "192.168.1.1"
+    
+    case login = "/login"
 }

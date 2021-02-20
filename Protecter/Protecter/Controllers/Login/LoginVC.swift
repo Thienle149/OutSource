@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Alamofire
 
-class LoginVC: BaseVC{
+class LoginVC: APIController<LoginVM>{
     @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
@@ -21,6 +22,7 @@ class LoginVC: BaseVC{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.vm = LoginVM(controller: self)
         self.configUI()
         self.configData()
     }
@@ -44,22 +46,11 @@ class LoginVC: BaseVC{
     //Mark: Action
     @IBAction func actionLogin(_ sender: Any) {
         self.showLoading()
-        if self.tfPhoneNumber.text == "0389382432" {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-        Utils.readFileJson(fileName: "userLogin") { (dict) in
-            let response = ResponseModel(dict: dict)
-            if response.isOk {
-                let user = UserModel(dict: response.data!)
-                Contants.global.user = user
-                let mainVC = MainTabBarVC()
-                self.push(mainVC)
-            } else {
-                self.showToast(response.messageText!)
-            }
-            self.hideLoading()
-        }}} else if tfPhoneNumber.text == "0969144852" {
+        let (allow, errs) = vm.validate(phone: self.tfPhoneNumber.text ?? "", password: self.tfPassword.text ?? "")
+        if allow {
+            if self.tfPhoneNumber.text == "0389382432" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-            Utils.readFileJson(fileName: "leadProtecter") { (dict) in
+            Utils.readFileJson(fileName: "userLogin") { (dict) in
                 let response = ResponseModel(dict: dict)
                 if response.isOk {
                     let user = UserModel(dict: response.data!)
@@ -70,11 +61,56 @@ class LoginVC: BaseVC{
                     self.showToast(response.messageText!)
                 }
                 self.hideLoading()
-            }}
-        } else {
+            }}} else if tfPhoneNumber.text == "0969144852" {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                Utils.readFileJson(fileName: "leadProtecter") { (dict) in
+                    let response = ResponseModel(dict: dict)
+                    if response.isOk {
+                        let user = UserModel(dict: response.data!)
+                        Contants.global.user = user
+                        let mainVC = MainTabBarVC()
+                        self.push(mainVC)
+                    } else {
+                        self.showToast(response.messageText!)
+                    }
+                    self.hideLoading()
+                }}
+            }
+        } else  {
+            self.showToast(errs.description)
             self.hideLoading()
-            self.showToast("Tài khoản không chính xác")
         }
+//        if self.tfPhoneNumber.text == "0389382432" {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+//        Utils.readFileJson(fileName: "userLogin") { (dict) in
+//            let response = ResponseModel(dict: dict)
+//            if response.isOk {
+//                let user = UserModel(dict: response.data!)
+//                Contants.global.user = user
+//                let mainVC = MainTabBarVC()
+//                self.push(mainVC)
+//            } else {
+//                self.showToast(response.messageText!)
+//            }
+//            self.hideLoading()
+//        }}} else if tfPhoneNumber.text == "0969144852" {
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+//            Utils.readFileJson(fileName: "leadProtecter") { (dict) in
+//                let response = ResponseModel(dict: dict)
+//                if response.isOk {
+//                    let user = UserModel(dict: response.data!)
+//                    Contants.global.user = user
+//                    let mainVC = MainTabBarVC()
+//                    self.push(mainVC)
+//                } else {
+//                    self.showToast(response.messageText!)
+//                }
+//                self.hideLoading()
+//            }}
+//        } else {
+//            self.hideLoading()
+//            self.showToast("Tài khoản không chính xác")
+//        }
     }
     
     
@@ -89,15 +125,6 @@ class LoginVC: BaseVC{
         self.push(forgetPasswordVC)
         
     }
-//
-//    override func push(_ vc: UIViewController, isBarHidden: Bool = false) {
-//                let appearance = UINavigationBarAppearance()
-//                appearance.shadowColor = UIColor.white
-//                appearance.backgroundColor = Constants.Color.main
-//                appearance.titleTextAttributes =  [NSAttributedString.Key.foregroundColor:UIColor.white]
-//                self.navigationController?.navigationBar.standardAppearance = appearance
-//                super.push(vc)
-//    }
     
 }
 
@@ -106,13 +133,13 @@ extension LoginVC: UITextFieldDelegate {
         if (textField == tfPhoneNumber) {
             linePhoneNumberView.backgroundColor = Contants.Color.lineActive
             linePasswordView.backgroundColor = Contants.Color.lineInActive
-            heightConstraintLinePhone.constant = 2
+            heightConstraintLinePhone.constant = 1
             heightConstraintLinePassword.constant = 1
         } else if(textField == tfPassword) {
             linePhoneNumberView.backgroundColor = Contants.Color.lineInActive
             linePasswordView.backgroundColor = Contants.Color.lineActive
             heightConstraintLinePhone.constant = 1
-            heightConstraintLinePassword.constant = 2
+            heightConstraintLinePassword.constant = 1
         }
     }
 }
