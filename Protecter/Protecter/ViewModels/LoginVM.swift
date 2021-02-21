@@ -44,8 +44,6 @@ class LoginVM: BaseAPIVM {
                 Contants.global.user = user
                 Utils.saveSessionApp(user: user)
                 success(true, nil)
-//                let mainVC = MainTabBarVC()
-//                self.push(mainVC)
             } else {
                 success(false, .notSuccess)
             }

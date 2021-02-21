@@ -64,13 +64,6 @@ enum TypeLog: String {
     case unknow = "🔴"
 }
 
-//enum HTTPMethod: String {
-//    case get = "GET"
-//    case post = "POST"
-//    case put = "PUT"
-//    case delete = "DELETE"
-//}
-
 enum RoleUser: Int {
     case admin = 1
     case contractor = 2

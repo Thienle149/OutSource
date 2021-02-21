@@ -51,4 +51,19 @@ class Contants: NSObject {
     static let global = GlobalModel()
     
     static let userSessionKey = "UserSessionKey"
+    
+    class ProFontName {
+        
+        static let proMedidum = "Roboto-Medium"
+        
+        static let proRegular = "Roboto-Regular"
+        
+        static let proLight = "Roboto-Light"
+        
+        static let proBold = "Roboto-Bold"
+        
+        static let proBlack = "Roboto-Black"
+        
+        static let proThin = "Roboto-Thin"
+    }
 }

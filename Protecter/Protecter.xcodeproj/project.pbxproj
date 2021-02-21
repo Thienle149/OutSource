@@ -106,7 +106,7 @@
 		456C054E25B9EB550025C9A6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C054D25B9EB550025C9A6 /* APIManager.swift */; };
 		456C055125B9EB820025C9A6 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456C055025B9EB820025C9A6 /* ServerAPI.swift */; };
 		4577030B25E0B90A00642C2B /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577030A25E0B90A00642C2B /* APIController.swift */; };
-		4577030F25E0BC9200642C2B /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577030E25E0BC9200642C2B /* BaseVM.swift */; };
+		4577030F25E0BC9200642C2B /* BaseAPIVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577030E25E0BC9200642C2B /* BaseAPIVM.swift */; };
 		4577031325E0C3B100642C2B /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577031225E0C3B100642C2B /* LoginVM.swift */; };
 		4577031625E0CA8A00642C2B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577031525E0CA8900642C2B /* StringExtension.swift */; };
 		4586C33225D37B1B0040528A /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C33125D37B1B0040528A /* StateVC.swift */; };
@@ -119,6 +119,7 @@
 		4586C37525D3B0DF0040528A /* StateProtectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C37425D3B0DF0040528A /* StateProtectVC.swift */; };
 		4586C37925D3B1720040528A /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586C37725D3B1720040528A /* StateCell.swift */; };
 		4586C37A25D3B1720040528A /* StateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4586C37825D3B1720040528A /* StateCell.xib */; };
+		459296BE25E2538500D2DD40 /* LabelSysPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459296BD25E2538500D2DD40 /* LabelSysPro.swift */; };
 		45A3C63C25C6D13900BF5B9E /* ProtecterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */; };
 		45A3C63E25C6D18500BF5B9E /* ShiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */; };
 		45A3C64125C6D95900BF5B9E /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C64025C6D95900BF5B9E /* TeamVC.swift */; };
@@ -245,7 +246,7 @@
 		456C054D25B9EB550025C9A6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		456C055025B9EB820025C9A6 /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
 		4577030A25E0B90A00642C2B /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		4577030E25E0BC9200642C2B /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		4577030E25E0BC9200642C2B /* BaseAPIVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIVM.swift; sourceTree = "<group>"; };
 		4577031225E0C3B100642C2B /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		4577031525E0CA8900642C2B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4586C33125D37B1B0040528A /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
@@ -258,6 +259,7 @@
 		4586C37425D3B0DF0040528A /* StateProtectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProtectVC.swift; sourceTree = "<group>"; };
 		4586C37725D3B1720040528A /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
 		4586C37825D3B1720040528A /* StateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateCell.xib; sourceTree = "<group>"; };
+		459296BD25E2538500D2DD40 /* LabelSysPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSysPro.swift; sourceTree = "<group>"; };
 		45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtecterModel.swift; sourceTree = "<group>"; };
 		45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftModel.swift; sourceTree = "<group>"; };
 		45A3C64025C6D95900BF5B9E /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				456C052E25B9E3E70025C9A6 /* Response */,
+				456C052225B9E0B80025C9A6 /* UserModel.swift */,
 				45ABD53925BD1D6C00F2E01B /* ModuleModel.swift */,
 				45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */,
 				45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */,
@@ -551,6 +554,7 @@
 		456C049D25B9D5090025C9A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				459296C425E260F100D2DD40 /* Common */,
 				4536960B25DF6623001A127B /* Custom */,
 				45ABD52725BD119400F2E01B /* Cells */,
 			);
@@ -649,7 +653,6 @@
 			isa = PBXGroup;
 			children = (
 				456C051F25B9DFD40025C9A6 /* ResponseModel.swift */,
-				456C052225B9E0B80025C9A6 /* UserModel.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -657,7 +660,7 @@
 		4577030D25E0BC5900642C2B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				4577030E25E0BC9200642C2B /* BaseVM.swift */,
+				4577030E25E0BC9200642C2B /* BaseAPIVM.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -679,6 +682,22 @@
 				45EC07CC25D406F5004A01A3 /* FloatingStateVC.xib */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		459296C025E258D000D2DD40 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				459296BD25E2538500D2DD40 /* LabelSysPro.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		459296C425E260F100D2DD40 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				459296C025E258D000D2DD40 /* Label */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		45A3C63F25C6D94200BF5B9E /* Modules */ = {
@@ -960,7 +979,7 @@
 				4569E9BC25C6EE7200B83895 /* TabListProblemVC.swift in Sources */,
 				456C04B225B9D5850025C9A6 /* LabelExtension.swift in Sources */,
 				4556AB4B25BC8AFF00716334 /* BaseLoginVC.swift in Sources */,
-				4577030F25E0BC9200642C2B /* BaseVM.swift in Sources */,
+				4577030F25E0BC9200642C2B /* BaseAPIVM.swift in Sources */,
 				45EC07C225D3F82E004A01A3 /* DetailStateVC.swift in Sources */,
 				45ABD53625BD128600F2E01B /* ModuleCell.swift in Sources */,
 				4520130E25D0CE3900B4457B /* DetailHistoryProblemVC.swift in Sources */,
@@ -973,6 +992,7 @@
 				456C04B325B9D5850025C9A6 /* TableViewExtension.swift in Sources */,
 				4556AB5A25BC934C00716334 /* CalendarVC.swift in Sources */,
 				453B647825BC42C8004B5E12 /* HomeVC.swift in Sources */,
+				459296BE25E2538500D2DD40 /* LabelSysPro.swift in Sources */,
 				4569E9C125C6EE9E00B83895 /* TabHistoryProblemVC.swift in Sources */,
 				4569E99325C6ECF600B83895 /* ProblemVC.swift in Sources */,
 				454212A925D26F6C00387B30 /* MediaCell.swift in Sources */,

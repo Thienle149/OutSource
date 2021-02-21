@@ -114,4 +114,25 @@ class Utils {
         UserDefaults.standard.removeObject(forKey: Contants.userSessionKey)
         Contants.global.user = nil
     }
+    
+    //MARK: Font
+    static func fontProRegular(size: CGFloat) -> UIFont {
+        return UIFont(name: Contants.ProFontName.proRegular, size: size)!
+    }
+    
+    static func fontProMedium(size: CGFloat) -> UIFont {
+        return UIFont(name: Contants.ProFontName.proMedidum, size: size)!
+    }
+    
+    static func fontProBold(size: CGFloat) ->UIFont {
+        return UIFont(name: Contants.ProFontName.proBold, size: size)!
+    }
+    
+    static func fontProThin(size: CGFloat) ->UIFont {
+        return UIFont(name: Contants.ProFontName.proThin, size: size)!
+    }
+    
+    static func fontProLight(size: CGFloat) ->UIFont {
+        return UIFont(name: Contants.ProFontName.proLight, size: size)!
+    }
 }

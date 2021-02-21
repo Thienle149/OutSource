@@ -11,12 +11,11 @@ import Alamofire
 
 class APIController<T: BaseAPIVM>: BaseVC {
    
+    //MARK: vm: ViewModel
     var vm: T!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
     
 }
