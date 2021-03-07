@@ -24,6 +24,7 @@ target 'Protecter' do
   pod 'MaterialComponents/TextControls+OutlinedTextAreas'
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'MaterialComponents/Buttons'
+  pod 'MaterialComponents/Ripple'
   
   pod 'GoogleMaps', '4.1.0'
   pod 'GooglePlaces', '4.1.0'

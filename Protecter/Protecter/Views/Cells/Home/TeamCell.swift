@@ -45,6 +45,14 @@ class TeamCell: UITableViewCell {
     }
     
     @IBAction func actionCall(_ sender: Any) {
+        if let phoneURL = URL(string: "tel://0123") {
+            let application = UIApplication.shared
+            if application.canOpenURL(phoneURL) {
+                application.open(phoneURL, options: [:], completionHandler: nil)
+            } else {
+                
+            }
+        }
     }
     
 }

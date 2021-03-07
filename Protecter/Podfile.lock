@@ -211,6 +211,7 @@ DEPENDENCIES:
   - iOSDropDown
   - IQKeyboardManager (~> 6.5)
   - MaterialComponents/Buttons
+  - MaterialComponents/Ripple
   - "MaterialComponents/TextControls+FilledTextAreas"
   - "MaterialComponents/TextControls+FilledTextFields"
   - "MaterialComponents/TextControls+OutlinedTextAreas"
@@ -291,6 +292,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: f4960743b9f94cafd0f33b528bf70b3d5b6fe61c
+PODFILE CHECKSUM: 2391e3a2e0d3f132f8d484e7ceebf17c5f47a04b
 
 COCOAPODS: 1.10.1

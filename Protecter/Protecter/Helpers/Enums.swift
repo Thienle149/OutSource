@@ -55,9 +55,28 @@ enum ErrorLogin: String {
     case email = "Email không hợp lệ"
     case phone = "Phone không hợp lệ"
     case password = "Vui lòng nhập password"
-    
     case notSuccess = "Tài khoản không chính xác"
 }
+
+enum ErrorSystem: String {
+    case error1001 = "Lỗi hệ thống"
+    case error1002 = "Lỗi url không hợp lệ"
+    
+    func getCode() -> String {
+        switch self {
+        case .error1001:
+            return "\(1)"
+        case .error1002:
+            return "\(2)"
+        }
+    }
+}
+
+enum ErrorApp: String {
+    // ReportProblem
+    case error10001 = "Vui lòng chọn dầy đủ thông tin"
+}
+
 enum TypeLog: String {
     case know = "🟢"
     case firebase = "🟠"
@@ -109,7 +128,7 @@ enum StatusTimeKeeping: String {
             return (UIColor(hexString: "#E74C3C"), UIColor(hexString: "#FFFFFF"))
         default: do {
             return (UIColor(hexString: "#D3B307"), UIColor(hexString: "#FCF3C6"))
-            }
+        }
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     var isPhoneNumber: Bool {
@@ -21,3 +22,4 @@ extension String {
         
     }
 }
+

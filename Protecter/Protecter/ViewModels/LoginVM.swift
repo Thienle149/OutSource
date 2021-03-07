@@ -13,8 +13,6 @@ protocol ResponseLoginDelegate {
 }
 
 class LoginVM: BaseAPIVM {
-   
-    public var delegate: ResponseLoginDelegate?
     
     public func validate(phone: String, password: String) -> (Bool, [ErrorLogin]) {
         var errors: [ErrorLogin] = []
@@ -60,12 +58,6 @@ class LoginVM: BaseAPIVM {
                     success(false, .notSuccess)
                 }
             }}
-        }
-    }
-    
-    override func handleAPI(path: ServerAPI, method: HTTPMethod, params: [String : Any]?, tag: String, completed json: [String : Any?]?) {
-        if path == .login {
-            
         }
     }
 }

@@ -18,35 +18,34 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
     @IBOutlet weak var selectAreaView: UIView!
     @IBOutlet weak var lblSelectArea: UILabel!
     @IBOutlet weak var btnRecord: UIButton!
-    @IBOutlet weak var imvRecord: UIImageView!
+    @IBOutlet weak var btnCapture: UIButton!
     @IBOutlet weak var mediaView: UIView!
+    @IBOutlet weak var lblMedia: LabelMediumSysPro!
+    @IBOutlet weak var groupControlMedia: UIStackView!
+    @IBOutlet weak var groupMedia: UIView!
+    @IBOutlet weak var bottomConstraintMedia: NSLayoutConstraint!
+    @IBOutlet weak var heightClvReport: NSLayoutConstraint!
     
     private let spaceItem: CGFloat = 5.0
     private let numberItemOnColumn = 3
     private let categoriesReportProblem = Contants.categoriesReportProblem
-    @IBOutlet weak var heightClvReport: NSLayoutConstraint!
     
     //Public
-    private var areas = ["Chung cư Khang Điền - Lô A - Lầu 1",
-                         "Chung cư Khang Điền - Lô A - Lầu 2",
-                         "Chung cư Khang Điền - Lô A - Lầu 3",
-                         "Chung cư Khang Điền - Lô A - Lầu 4",
-                         "Chung cư Khang Điền - Lô A - Lầu 5",
-                         "Chung cư Khang Điền - Lô A - Lầu 6",
-                         "Chung cư Khang Điền - Lô A - Lầu 7"
-    ]
+    private var areas: [String]!
+    
     private var medias: [MediaModel] = [MediaModel]() {
         didSet {
-            self.clvMedia.reloadData()
+            self.reloadMedia()
         }
     }
+    
     private var currentAudio = ""
-    private var selectedIndex = 0;
     
     // Audio
     private var recordingSession: AVAudioSession!
     private var audioRecorder: AVAudioRecorder!
     private let audioExtension: String = "m4a"
+    private var vModel: ReportProblemVM!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +55,7 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.clvProblem.addObserver(self, forKeyPath: "contentSize", options: [.new, .old, .prior], context: nil)
+        setHiddenMedia(true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -70,7 +70,6 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
         self.presentAnimate(picker)
     }
     
-    
     @IBAction func actionRecord(_ sender: Any) {
         if audioRecorder == nil {
             startRecording()
@@ -80,10 +79,17 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
     }
     
     @IBAction func actionSend(_ sender: Any) {
-        self.removeAllFileAudio()
-        self.medias = []
-        let alertReportVC = AlertProblemVC()
-        self.presentNoneAnimation(alertReportVC)
+        
+        if let reportProblem = vModel.convertReportProblem(areas: self.areas, categoriesReportProblem: categoriesReportProblem, medias: medias) {
+            self.vModel.sendSOS(reportProblem: reportProblem) {
+                self.removeAllFileAudio()
+                self.medias = []
+                let alertReportVC = AlertProblemVC()
+                self.presentNoneAnimation(alertReportVC)
+            }
+        } else {
+            self.showToast(ErrorApp.error10001.rawValue)
+        }
     }
     
     @IBAction func actionBack(_ sender: Any) {
@@ -102,15 +108,23 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
         
         self.clvMedia.register(UINib(nibName: MediaCell.identifier, bundle: nil), forCellWithReuseIdentifier: MediaCell.identifier)
         
-        self.mediaView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        self.vModel = ReportProblemVM(controller: self)
         
-        self.lblSelectArea.text = self.areas.first
+        vModel.getAreas { [weak self](areas) in
+            self?.areas = areas
+            self?.lblSelectArea.text = self?.areas.first
+        }
+        
+        self.mediaView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
         let tab = UITapGestureRecognizer(target: self, action: #selector(tapArea))
         self.selectAreaView.addGestureRecognizer(tab)
         
         self.configRecordAudio()
         
+        self.btnCapture.layer.cornerRadius = 30
+        
+        self.btnRecord.layer.cornerRadius = 30
     }
     
     private func configRecordAudio() {
@@ -149,7 +163,7 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
             audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder.delegate = self as? AVAudioRecorderDelegate
             audioRecorder.record()
-            self.imvRecord.image = UIImage(systemName: "record.circle")
+            self.btnRecord.setImage(UIImage(systemName: "record.circle"), for: .normal)
         } catch {
             self.currentAudio = ""
             finishRecording(success: false)
@@ -166,7 +180,7 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
         audioRecorder = nil
         
         if success {
-            self.imvRecord.image = #imageLiteral(resourceName: "microphone")
+            self.btnRecord.setImage(#imageLiteral(resourceName: "microphone"), for: .normal)
             let audioMedia = MediaAudioModel(audioName: self.currentAudio)
             medias.append(audioMedia)
             // refresh
@@ -194,9 +208,36 @@ class ReportProblemVC: BaseVC, UINavigationControllerDelegate {
     @objc func tapArea() {
         let selectAreaProtectVC = SelectAreaProtectVC()
         selectAreaProtectVC.areas = self.areas
-        selectAreaProtectVC.selectedIndex = self.selectedIndex
+        selectAreaProtectVC.selectedIndex = self.vModel.selectedAreaIndex
         selectAreaProtectVC.delegate = self
         self.push(selectAreaProtectVC)
+    }
+    
+    private func calculateBotomMedia() {
+        let screenSize = UIScreen.main.bounds.size
+        let heightIP11: CGFloat = 896
+        if screenSize.height >= heightIP11 || medias.count == 0 {
+            //IP big screen: Plus, Pro,...
+            self.bottomConstraintMedia.constant = 0
+        } else {
+            //IP small
+            self.bottomConstraintMedia.constant = -120
+        }
+    }
+    
+    private func reloadMedia() {
+        if medias.count == 0 {
+            setHiddenMedia(true)
+        } else {
+            setHiddenMedia(false)
+        }
+        self.calculateBotomMedia()
+        self.clvMedia.reloadData()
+    }
+    
+    private func setHiddenMedia(_ hidden: Bool) {
+        self.lblMedia.isHidden = hidden
+        self.groupMedia.isHidden = hidden
     }
 }
 
@@ -253,6 +294,7 @@ extension ReportProblemVC: UICollectionViewDataSource, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == clvProblem {
             self.didSelectCell(current: indexPath)
+            self.vModel.selectedCategoryProblemIndex = indexPath.row
         }
     }
     
@@ -273,7 +315,7 @@ extension ReportProblemVC: SelectedAreaProtectDelegate {
     func didSelectArea(index: Int) {
         let area = self.areas[index]
         self.lblSelectArea.text = area
-        self.selectedIndex = index
+        self.vModel.selectedAreaIndex = index
     }
 }
 
