@@ -321,7 +321,8 @@ extension ReportProblemVC: SelectedAreaProtectDelegate {
 
 extension ReportProblemVC: UIImagePickerControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        
+        picker.stopVideoCapture()
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

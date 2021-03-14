@@ -17,6 +17,7 @@ class Utils {
     
     // MARK: Constraint
     static func setConstraintFull(with view: UIView, parent: UIView ) {
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
         view.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 0).isActive = true
         view.bottomAnchor.constraint(equalTo: parent.bottomAnchor, constant: 0).isActive = true

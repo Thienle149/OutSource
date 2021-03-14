@@ -25,6 +25,7 @@ enum ScreenApp: String {
     case reportProblem = "ReportProblemVC"
     case state = "StateVC"
     case stateProtect = "StateProtectVC"
+    case patrol = "PatrolVC"
     case module = "ModuleVC"
     
     // Others
@@ -37,7 +38,7 @@ enum ScreenApp: String {
             return "Login"
         }
         // Home
-        else if(self == .home || self == .menu || self == .team || self == .problem || self == .reportProblem || self == .state || self == .stateProtect || self == .module) {
+        else if(self == .home || self == .menu || self == .team || self == .problem || self == .reportProblem || self == .state || self == .stateProtect || self == .patrol || self == .module) {
             return "Home"
         }
         // Other
@@ -153,4 +154,18 @@ enum StatusProblem: String{
 enum MediaType {
     case image
     case audio
+}
+
+enum PatrolState {
+    case active
+    case notActive
+    
+    func getImage() -> UIImage {
+        switch self {
+        case .active:
+            return UIImage(systemName: "play.fill")!
+        case .notActive:
+            return UIImage(systemName: "pause.fill")!
+        }
+    }
 }

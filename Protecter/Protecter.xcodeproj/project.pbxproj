@@ -126,6 +126,19 @@
 		459917F525F4D21400AA94E5 /* ReportProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459917F425F4D21400AA94E5 /* ReportProblemModel.swift */; };
 		459917F925F4D67100AA94E5 /* BaseAPIVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459917F825F4D67100AA94E5 /* BaseAPIVMProtocol.swift */; };
 		459917FC25F4DE1100AA94E5 /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459917FB25F4DE1100AA94E5 /* ErrorResponseModel.swift */; };
+		459F550625FE3D400029773F /* PatrolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F550525FE3D400029773F /* PatrolVC.swift */; };
+		459F550B25FE3DD20029773F /* TabCalendarPatrolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F550925FE3DD20029773F /* TabCalendarPatrolVC.swift */; };
+		459F550C25FE3DD20029773F /* TabCalendarPatrolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459F550A25FE3DD20029773F /* TabCalendarPatrolVC.xib */; };
+		459F551025FE3DE80029773F /* TabHistoryPatrolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F550E25FE3DE80029773F /* TabHistoryPatrolVC.swift */; };
+		459F551125FE3DE80029773F /* TabHistoryPatrolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459F550F25FE3DE80029773F /* TabHistoryPatrolVC.xib */; };
+		459F551725FE43290029773F /* SectionPatrolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F551525FE43290029773F /* SectionPatrolCell.swift */; };
+		459F551825FE43290029773F /* SectionPatrolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459F551625FE43290029773F /* SectionPatrolCell.xib */; };
+		459F551C25FE433F0029773F /* ItemPatrolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F551A25FE433F0029773F /* ItemPatrolCell.swift */; };
+		459F551D25FE433F0029773F /* ItemPatrolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459F551B25FE433F0029773F /* ItemPatrolCell.xib */; };
+		459F552025FE48E70029773F /* SectionPatrolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F551F25FE48E70029773F /* SectionPatrolModel.swift */; };
+		459F552425FE492D0029773F /* PatrolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F552325FE492D0029773F /* PatrolModel.swift */; };
+		459F552825FE5FED0029773F /* FooterPatrolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F552725FE5FED0029773F /* FooterPatrolView.swift */; };
+		459F552C25FE60120029773F /* FooterPatrolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459F552B25FE60120029773F /* FooterPatrolView.xib */; };
 		45A3C63C25C6D13900BF5B9E /* ProtecterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */; };
 		45A3C63E25C6D18500BF5B9E /* ShiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */; };
 		45A3C64125C6D95900BF5B9E /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3C64025C6D95900BF5B9E /* TeamVC.swift */; };
@@ -272,6 +285,19 @@
 		459917F425F4D21400AA94E5 /* ReportProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportProblemModel.swift; sourceTree = "<group>"; };
 		459917F825F4D67100AA94E5 /* BaseAPIVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIVMProtocol.swift; sourceTree = "<group>"; };
 		459917FB25F4DE1100AA94E5 /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
+		459F550525FE3D400029773F /* PatrolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrolVC.swift; sourceTree = "<group>"; };
+		459F550925FE3DD20029773F /* TabCalendarPatrolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCalendarPatrolVC.swift; sourceTree = "<group>"; };
+		459F550A25FE3DD20029773F /* TabCalendarPatrolVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabCalendarPatrolVC.xib; sourceTree = "<group>"; };
+		459F550E25FE3DE80029773F /* TabHistoryPatrolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHistoryPatrolVC.swift; sourceTree = "<group>"; };
+		459F550F25FE3DE80029773F /* TabHistoryPatrolVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHistoryPatrolVC.xib; sourceTree = "<group>"; };
+		459F551525FE43290029773F /* SectionPatrolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPatrolCell.swift; sourceTree = "<group>"; };
+		459F551625FE43290029773F /* SectionPatrolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionPatrolCell.xib; sourceTree = "<group>"; };
+		459F551A25FE433F0029773F /* ItemPatrolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPatrolCell.swift; sourceTree = "<group>"; };
+		459F551B25FE433F0029773F /* ItemPatrolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemPatrolCell.xib; sourceTree = "<group>"; };
+		459F551F25FE48E70029773F /* SectionPatrolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPatrolModel.swift; sourceTree = "<group>"; };
+		459F552325FE492D0029773F /* PatrolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrolModel.swift; sourceTree = "<group>"; };
+		459F552725FE5FED0029773F /* FooterPatrolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterPatrolView.swift; sourceTree = "<group>"; };
+		459F552B25FE60120029773F /* FooterPatrolView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterPatrolView.xib; sourceTree = "<group>"; };
 		45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtecterModel.swift; sourceTree = "<group>"; };
 		45A3C63D25C6D18500BF5B9E /* ShiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftModel.swift; sourceTree = "<group>"; };
 		45A3C64025C6D95900BF5B9E /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
@@ -341,6 +367,7 @@
 		4536960B25DF6623001A127B /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				459F552625FE5FAC0029773F /* Views */,
 				459917EC25F4985000AA94E5 /* Button */,
 				4536960C25DF6668001A127B /* StateView.swift */,
 				4536961025DF668F001A127B /* StateView.xib */,
@@ -534,6 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				456C052E25B9E3E70025C9A6 /* Response */,
+				459F551F25FE48E70029773F /* SectionPatrolModel.swift */,
 				456C052225B9E0B80025C9A6 /* UserModel.swift */,
 				45ABD53925BD1D6C00F2E01B /* ModuleModel.swift */,
 				45A3C63B25C6D13900BF5B9E /* ProtecterModel.swift */,
@@ -543,6 +571,7 @@
 				4520134C25D13C4300B4457B /* CategoryProblemModel.swift */,
 				454212A325D24F0100387B30 /* MediaModel.swift */,
 				459917F425F4D21400AA94E5 /* ReportProblemModel.swift */,
+				459F552325FE492D0029773F /* PatrolModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -733,9 +762,31 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		459F550425FE3CF80029773F /* Patrol */ = {
+			isa = PBXGroup;
+			children = (
+				459F550525FE3D400029773F /* PatrolVC.swift */,
+				459F550925FE3DD20029773F /* TabCalendarPatrolVC.swift */,
+				459F550A25FE3DD20029773F /* TabCalendarPatrolVC.xib */,
+				459F550E25FE3DE80029773F /* TabHistoryPatrolVC.swift */,
+				459F550F25FE3DE80029773F /* TabHistoryPatrolVC.xib */,
+			);
+			path = Patrol;
+			sourceTree = "<group>";
+		};
+		459F552625FE5FAC0029773F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				459F552725FE5FED0029773F /* FooterPatrolView.swift */,
+				459F552B25FE60120029773F /* FooterPatrolView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		45A3C63F25C6D94200BF5B9E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				459F550425FE3CF80029773F /* Patrol */,
 				4586C33025D37B060040528A /* State */,
 				4520133E25D12B5C00B4457B /* ReportProblem */,
 				4569E9B525C6EE0E00B83895 /* Problem */,
@@ -770,6 +821,10 @@
 				454212A825D26F6C00387B30 /* MediaCell.xib */,
 				4586C37725D3B1720040528A /* StateCell.swift */,
 				4586C37825D3B1720040528A /* StateCell.xib */,
+				459F551525FE43290029773F /* SectionPatrolCell.swift */,
+				459F551625FE43290029773F /* SectionPatrolCell.xib */,
+				459F551A25FE433F0029773F /* ItemPatrolCell.swift */,
+				459F551B25FE433F0029773F /* ItemPatrolCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -864,16 +919,19 @@
 				4567B87C25BB0E6D00CE1901 /* Rosario-Italic.ttf in Resources */,
 				4567B86625BB0D2100CE1901 /* Roboto-Thin.ttf in Resources */,
 				4569E9C225C6EE9E00B83895 /* TabHistoryProblemVC.xib in Resources */,
+				459F551825FE43290029773F /* SectionPatrolCell.xib in Resources */,
 				4567B87B25BB0E6D00CE1901 /* Rosario-MediumItalic.ttf in Resources */,
 				4567B87925BB0E6D00CE1901 /* Rosario-Light.ttf in Resources */,
 				4520130F25D0CE3900B4457B /* DetailHistoryProblemVC.xib in Resources */,
 				4567B86425BB0D2100CE1901 /* Roboto-BlackItalic.ttf in Resources */,
+				459F551125FE3DE80029773F /* TabHistoryPatrolVC.xib in Resources */,
 				456C04EE25B9D7140025C9A6 /* Login.storyboard in Resources */,
 				45EC07C325D3F82E004A01A3 /* DetailStateVC.xib in Resources */,
 				45599F2D25C6C30200624780 /* TeamCell.xib in Resources */,
 				4520135625D15F0F00B4457B /* SelectAreaProtectVC.xib in Resources */,
 				45E0BD3F25CC44F3005AF55A /* Assets.xcassets in Resources */,
 				4567B86025BB0D2100CE1901 /* Roboto-BoldItalic.ttf in Resources */,
+				459F552C25FE60120029773F /* FooterPatrolView.xib in Resources */,
 				456C04D725B9D64D0025C9A6 /* README.md in Resources */,
 				45B9229E25C701AC002FC7AC /* ProblemCell.xib in Resources */,
 				4567B85E25BB0D2100CE1901 /* Roboto-MediumItalic.ttf in Resources */,
@@ -883,12 +941,14 @@
 				45E0BD3D25CC44EE005AF55A /* LaunchScreen.storyboard in Resources */,
 				453FDCBE25CC392B00EFB300 /* location.json in Resources */,
 				4567B88025BB0E6D00CE1901 /* Rosario-BoldItalic.ttf in Resources */,
+				459F551D25FE433F0029773F /* ItemPatrolCell.xib in Resources */,
 				4567B88C25BB1C3E00CE1901 /* userLogin.json in Resources */,
 				4569E9BD25C6EE7200B83895 /* TabListProblemVC.xib in Resources */,
 				4567B85D25BB0D2100CE1901 /* Roboto-Regular.ttf in Resources */,
 				4567B87A25BB0E6D00CE1901 /* Rosario-LightItalic.ttf in Resources */,
 				4567B87F25BB0E6D00CE1901 /* Rosario-Medium.ttf in Resources */,
 				4520134625D13A6500B4457B /* ReportProblemCell.xib in Resources */,
+				459F550C25FE3DD20029773F /* TabCalendarPatrolVC.xib in Resources */,
 				45EC07C825D3FCC4004A01A3 /* CreateStateVC.xib in Resources */,
 				4586C33825D37EA90040528A /* Tab24HourStateVC.xib in Resources */,
 				4567B87E25BB0E6D00CE1901 /* Rosario-SemiBold.ttf in Resources */,
@@ -970,7 +1030,9 @@
 				459917F525F4D21400AA94E5 /* ReportProblemModel.swift in Sources */,
 				456C04EC25B9D7140025C9A6 /* LoginVC.swift in Sources */,
 				456C04EB25B9D7140025C9A6 /* RegisterVC.swift in Sources */,
+				459F552425FE492D0029773F /* PatrolModel.swift in Sources */,
 				45E0BD6A25CC5BA2005AF55A /* HomeVM.swift in Sources */,
+				459F551C25FE433F0029773F /* ItemPatrolCell.swift in Sources */,
 				45A3C63E25C6D18500BF5B9E /* ShiftModel.swift in Sources */,
 				4520131925D0EDDC00B4457B /* DetailListProblemVC.swift in Sources */,
 				4577031625E0CA8A00642C2B /* String+Utils.swift in Sources */,
@@ -980,6 +1042,8 @@
 				4577030B25E0B90A00642C2B /* APIController.swift in Sources */,
 				456C051C25B9DD600025C9A6 /* Utils.swift in Sources */,
 				456C04F325B9DAF90025C9A6 /* BaseVC.swift in Sources */,
+				459F551025FE3DE80029773F /* TabHistoryPatrolVC.swift in Sources */,
+				459F550B25FE3DD20029773F /* TabCalendarPatrolVC.swift in Sources */,
 				45E0BCC625CC3E76005AF55A /* AppDelegate.swift in Sources */,
 				4586C37925D3B1720040528A /* StateCell.swift in Sources */,
 				456C04B425B9D5850025C9A6 /* ScrollViewExtension.swift in Sources */,
@@ -1015,6 +1079,7 @@
 				456C04BB25B9D5850025C9A6 /* ColorExtension.swift in Sources */,
 				456C04BA25B9D5850025C9A6 /* DateExtension.swift in Sources */,
 				459917F225F4CF7D00AA94E5 /* ReportProblemProtocol.swift in Sources */,
+				459F551725FE43290029773F /* SectionPatrolCell.swift in Sources */,
 				456C04C025B9D5850025C9A6 /* LayerExtension.swift in Sources */,
 				4569E9BC25C6EE7200B83895 /* TabListProblemVC.swift in Sources */,
 				456C04B225B9D5850025C9A6 /* LabelExtension.swift in Sources */,
@@ -1024,6 +1089,7 @@
 				45ABD53625BD128600F2E01B /* ModuleCell.swift in Sources */,
 				4520130E25D0CE3900B4457B /* DetailHistoryProblemVC.swift in Sources */,
 				454212B725D2A82A00387B30 /* AlertCancelProblemVC.swift in Sources */,
+				459F550625FE3D400029773F /* PatrolVC.swift in Sources */,
 				4520134D25D13C4300B4457B /* CategoryProblemModel.swift in Sources */,
 				456C04EA25B9D7140025C9A6 /* ForgetPasswordVC.swift in Sources */,
 				456C04BE25B9D5850025C9A6 /* FormatterExtension.swift in Sources */,
@@ -1040,6 +1106,8 @@
 				45599F2C25C6C30200624780 /* TeamCell.swift in Sources */,
 				45E0BCC225CC3E70005AF55A /* SceneDelegate.swift in Sources */,
 				45EC07CD25D406F5004A01A3 /* FloatingStateVC.swift in Sources */,
+				459F552025FE48E70029773F /* SectionPatrolModel.swift in Sources */,
+				459F552825FE5FED0029773F /* FooterPatrolView.swift in Sources */,
 				4536960D25DF6668001A127B /* StateView.swift in Sources */,
 				4520134125D1335B00B4457B /* ReportProblemVC.swift in Sources */,
 				45ABD53A25BD1D6C00F2E01B /* ModuleModel.swift in Sources */,

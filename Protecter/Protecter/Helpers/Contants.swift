@@ -30,7 +30,7 @@ class Contants: NSObject {
     static let MONITOR_NETWORK_TIMER = 0.5
     
     static let allModules: [ModuleModel] = [ModuleModel(title: "Đội", image: #imageLiteral(resourceName: "icons8-user-group-skin-type-7-96"), vc: Utils.storyboary(screen: .team, asClass: TeamVC.self)),
-                                         ModuleModel(title: "Tuần Tra", image: #imageLiteral(resourceName: "icons8-security-guard-96"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
+                                            ModuleModel(title: "Tuần Tra", image: #imageLiteral(resourceName: "icons8-security-guard-96"), vc: Utils.storyboary(screen: .patrol, asClass: PatrolVC.self)),
                                          ModuleModel(title: "Quản lý nhóm", image: #imageLiteral(resourceName: "icons8-attendance-80"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Lịch sử hoạt động", image: #imageLiteral(resourceName: "icons8-copybook-64"), vc: Utils.storyboary(screen: .module, asClass: ModuleVC.self)),
                                          ModuleModel(title: "Danh sách sự cố", image: #imageLiteral(resourceName: "icons8-high-risk-80"), vc: Utils.storyboary(screen: .problem, asClass: ProblemVC.self)),

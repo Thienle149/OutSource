@@ -32,7 +32,7 @@ class ReportProblemVM: BaseAPIVM, ReportProblemProtocol {
     }
     
     func convertReportProblem(areas: [String], categoriesReportProblem: [CategoryProblemModel], medias: [MediaModel]) -> ReportProblemModel? {
-        if selectedCategoryProblemIndex != -1 {
+        if selectedCategoryProblemIndex != -1 && medias.count != 0 {
             return ReportProblemModel(locationName: areas[selectedAreaIndex], categoryProblem: categoriesReportProblem[selectedCategoryProblemIndex], medias: medias)
         }
         return nil
